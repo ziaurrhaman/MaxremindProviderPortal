@@ -1,0 +1,144 @@
+﻿
+
+
+.divSearchResults
+{
+    position: absolute;
+    z-index: 99999;
+    width: 472px;
+    max-height: 200px;
+    overflow-y: auto;
+    top: 30px;
+    left: 0px;
+    display: none;
+}
+
+.ul-patient-info-detail
+{
+}
+.ul-patient-info-detail li
+{
+}
+.ul-patient-info-detail li span
+{
+    cursor: pointer;
+    width: 92%;
+    float: left;
+    padding: 2px 4%;
+}
+.ul-patient-info-detail li span:hover
+{
+    background: #D0E6FB;
+}
+
+.appointment-details-div
+{
+    min-width: 200px;
+    min-height: 237px;
+    background: #fff;
+    border: 1px solid;
+    position: absolute;
+    font-size: 11px;
+    z-index: 999999;
+}
+.appointment-details-div #divAppointmentDetailInner
+{
+}
+.appointment-details-div #divAppointmentDetailProcessing
+{
+}
+.appointment-details-div #divAppointmentDetailProcessing img
+{
+}
+.custom-loading-1
+{
+    background: #fff;
+    border: 1px solid;
+    position: absolute;
+    z-index: 999999;
+    padding: 3px 15px;
+    top: 20px;
+    left: 80px;
+}
+
+.appointment-legend-div
+{
+    float: left;
+    width: 100%;
+    height: 72px;
+    overflow-y: auto;
+}
+.ul-legends li
+{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.span-color-box
+{
+    float: left;
+    width: 12px;
+    height: 12px;
+    background-color: #f40226;
+}
+.span-color-desc
+{
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+/*Start Image Upload Style*/
+.PersonPhotoWrapper
+{
+    float: left;
+    width: 85px;
+    height: 110px;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+.PersonPhoto
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+}
+.PersonPhoto img
+{
+    width: 100%;
+    height: 100%;
+}
+.ChangePhoto
+{
+    z-index: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 11px;
+}
+.ChangePhotoWrapper
+{
+    cursor: pointer;
+    width: 100%;
+    height: 22px;
+    position:absolute;
+}
+.ChangePhotoWrapper input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+/*End Image Upload Style*/

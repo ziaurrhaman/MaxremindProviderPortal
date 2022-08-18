@@ -1,0 +1,44 @@
+﻿
+.commonTable .tdLabel
+{
+    text-align: right;
+    height: 35px;
+    padding-right: 15px;
+}
+
+.commonTable .tdDateField
+{
+}
+
+.commonTable input[type="text"]
+{
+    width: 70%;
+}
+
+.commonTable input[type="password"]
+{
+    width: 70%;
+    background: #FFF;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 2px;
+outline: none;
+padding: 5px 2%;
+border-top: solid 1px #C4C4C4;
+border-left: solid 1px #C4C4C4;
+border-bottom: solid 1px #C4C4C4;
+border-right: solid 1px #C4C4C4;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border linear .2s,box-shadow linear .2s;
+-moz-transition: border linear .2s,box-shadow linear .2s;
+-o-transition: border linear .2s,box-shadow linear .2s;
+transition: border linear .2s,box-shadow linear .2s;
+}
+
+
+.commonTable select
+{
+    width: 75%;
+}

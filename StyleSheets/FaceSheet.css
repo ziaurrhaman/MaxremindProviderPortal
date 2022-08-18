@@ -1,0 +1,106 @@
+﻿
+#photo
+{
+    width:15%;
+    float:left;
+    height:200px;
+    
+}
+.BasicInformation
+{
+   width:80%;
+   margin:0 0 0 20px;
+   padding:10px;
+   float:left;
+}
+.LeftHeading
+{
+    font-size:14pt;
+    font-weight:bold;
+}
+    
+.Heading {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 3px lightgray;
+    -webkit-box-shadow: 0px 4px 3px lightgray;
+    -moz-box-shadow: 0px 4px 3px lightgray;
+    padding:8px 2px;
+    /*background: url('../Images/bgActiveTab.png');*/
+    background-color: #01659a;
+    color: white;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+}
+
+
+
+
+
+#tblPatientDemographics .input sss
+{
+    background-color: transparent;
+    border-color: -moz-use-text-color;
+    border-radius: 0;
+    color: #000000;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-style: none;
+    border-width: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    cursor: text;
+    height: 17px;
+    padding: 0 0 0 5px;
+    border: none;
+    font-weight: bold;
+    disabled:true;
+}
+
+
+#PersonPhoto
+{
+    height: 100%; 
+    float: left; 
+    position:relative; 
+}
+
+#fuPatient:hover .ChangePhotoWrapper
+{
+    display:block;
+    cursor:pointer;
+}
+
+
+.phone-wrapper
+{
+    width:100%;
+    float:left;
+}
+.phone-wrapper img
+{
+    float:left;
+}
+
+.Heading .Grid td
+{
+    font-size: 12px;
+    font-weight: normal;
+    color: #444;
+}
+.Heading .Grid th
+{
+    font-size: 11px !important;
+}
+#divPatientAlertsDropDown
+{
+    position:absolute;
+    display:none;
+    right: 0;
+    width: 250px;
+}

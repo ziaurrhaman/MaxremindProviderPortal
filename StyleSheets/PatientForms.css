@@ -1,0 +1,131 @@
+﻿
+
+#divPatientFormsInner{
+    float:left;
+    padding: 0 0 50px;
+}
+.pat-form-wrapper{
+    padding: 0 50px;
+}
+.pat-form-wrapper .pat-form-p span{
+    float:left;
+}
+.pat-form-header{
+    float: left;
+    width: 100%;
+    border-bottom: 7px solid #000;
+}
+
+.pat-form-contents{
+    float: left;
+    width: 100%;
+}
+.pat-form-p-1{
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 20px;
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+}
+.pat-form-p{
+    text-align: justify;
+    line-height: 25px;
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+}
+.pat-form-bold-1{
+
+}
+
+.pat-form-underline-wrapper{
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+    /*display: inline-block;*/
+}
+.pat-form-underline-top{
+    height: 16px;
+}
+.pat-form-underline-bottom{
+    padding: 6px 0 0;
+}
+.pat-form-underline-text{
+    font-weight: bold;
+}
+.pat-form-underline-left{
+    float: left;
+    width: 500px;
+}
+.pat-form-underline-right{
+    float: right;
+    width: 220px;
+}
+.pat-form-wrapper .bold-1{
+    font-weight: bold;
+}
+.pat-form-wrapper .center{
+    text-align:center;
+}
+.pat-form-wrapper .block{
+    float:left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*****Start Borders*****/
+.border-bottom-1{
+    border-bottom: 1px solid #000;
+}
+.border-bottom-2{
+    border-bottom: 2px solid #000;
+}
+/*****End Borders*****/
+
+/*****Start Headings*****/
+.pat-form-main-heading{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+}
+.pat-form-wrapper .pat-heading-1{
+    font-weight: bold;
+    font-size: 13px;
+}
+.pat-form-wrapper .pat-heading-2{
+    font-weight: bold;
+    font-size: 14px;
+}
+.pat-form-wrapper .pat-heading-3{
+    font-weight: bold;
+    font-size: 15px;
+}
+.pat-form-wrapper .pat-heading-4{
+    font-weight: bold;
+    font-size: 16px;
+}
+.pat-form-wrapper .pat-heading-5{
+    font-weight: bold;
+    font-size: 17px;
+}
+.pat-form-wrapper .pat-heading-6{
+    font-weight: bold;
+    font-size: 18px;
+}
+.pat-form-wrapper .pat-heading-7{
+    font-weight: bold;
+    font-size: 19px;
+}
+.pat-form-wrapper .pat-heading-8{
+    font-weight: bold;
+    font-size: 20px;
+}
+.pat-form-wrapper .pat-heading-underline-1{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*****End Headings*****/

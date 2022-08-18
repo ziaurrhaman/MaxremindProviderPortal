@@ -1,0 +1,203 @@
+﻿
+.VisaCard{
+    border:1px solid black;
+    width:100%;
+    float:left;
+    
+
+}
+
+.InvoiceHeader{
+
+    width:100%;
+    float:left;
+}
+
+.InvoiceHeaderCol{
+    width:50%;
+    float:left;
+}
+
+.InvoiceHeaderUpper{
+    width:100%;
+    float:left;
+}
+
+.InvoiceHeaderLower{
+    width:100%;
+    float:left;
+}
+
+.PatientInvoice{
+    font-family: arial;
+    font-size: 12px;
+}
+
+.ServiceProvider{
+    margin-top: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    margin-left:5px;
+}
+
+.SrviceProviderName{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.divCheckBox {
+    width: 9px;
+    height: 9px;
+    border: 1px solid black;
+    float:left;
+}
+
+.PatientName{
+    font-weight:bold;
+    font-size:13px;
+}
+
+.PatientInfo{
+    margin-top: 44px;
+    line-height: 18px;
+    
+}
+
+.Col3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.AmountPaid {
+    width: 50%;
+    float: right;
+    height: 45px;
+    font-size: 13px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    margin-right:-2px;
+    padding:5px;
+    box-sizing:border-box;
+}
+
+.Seprator{
+    width:100%;
+    float:left;
+    text-align:center;
+}
+
+.DetailHeading{
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:15px;
+    float:left;
+}
+
+.BalanceRow {
+    width: 100%;
+    float: left;
+    font-weight: bold;    
+    height: 26px;
+    border-bottom: 1px solid black;
+
+}
+
+.BalancBox{
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.BalanceColumnL {
+    width: 60%;
+    float: left;
+    font-weight: bold;
+    border-right: 1px solid black;
+    height:100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.BalanceColumnR{
+    width:39%; 
+    float:left;
+    text-align:center;
+    margin-top:5px;
+}
+
+.PaymentGrid{
+    width:100%;
+    float:left;
+    border: 1px solid black;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+.PaymentGridCol{
+    width:11.1%;
+    float:left;
+    text-align: center;
+    font-weight: bold;   
+     
+}
+
+.PaymentGridRow{
+    width:100%;
+    float:left;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    height:27px;
+}
+
+.PaymentGridRow2{
+    width:100%;
+    float:left;
+    border-bottom:1px solid black;
+    border-right:1px solid black;
+    height:22px;
+    padding-top:5px;
+    
+}
+
+.StatementTable{
+    width:100%;
+    border:1px solid black;
+    margin-bottom:5px;
+    font-size:11px;
+    
+
+}
+
+.StatementTable th {
+
+    border-right:1px solid black;
+    border-bottom: 1px solid black;
+    font-size:12px;
+    box-sizing:border-box;
+}
+
+.StatementTable td {
+
+    border-right:1px solid black;
+}
+
+.StatementTable tr {
+
+    height:20px;
+}
+
+.PatientInvoice{
+    width:712px;
+    margin:5px auto;
+    page-break-after:always;
+}
+.backTest {
+    background: black !important;            
+    -webkit-print-color-adjust: exact; 
+} 

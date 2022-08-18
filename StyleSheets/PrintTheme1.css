@@ -1,0 +1,174 @@
+﻿
+
+body{
+    -webkit-print-color-adjust:exact;
+}
+
+
+.print-page-theme-1
+{
+    float: left;
+    padding: 0 50px;
+    background: #FFF;
+    margin: 0 auto;
+}
+.print-page-theme-1 .top-portion
+{
+    
+}
+.print-page-theme-1 .top-most
+{
+    float:left;
+    width: 100%;
+}
+.print-page-theme-1 .top-left
+{
+    float: left;
+    width: 50%;
+}
+.print-page-theme-1 .top-right
+{
+    float: right;
+    width: 50%;
+}
+.print-page-theme-1 .middle-section
+{
+    float: left;
+    width: 100%;
+}
+
+.print-page-theme-1 .practice-info
+{
+    float: left;
+    width: 100%;
+    margin: 0 0 15px;
+}
+.print-page-theme-1 .practice-info  .practice-logo-wrapper
+{
+    float: left;
+    margin: 0 10px 0 0;
+}
+.print-page-theme-1 .practice-info  .practice-logo-wrapper img
+{
+    width: 80px;
+    height: 75px;
+}
+.print-page-theme-1 .practice-info  .practice-information
+{
+    float: left;
+    width: 200px;
+}
+.print-page-theme-1 .practice-info  .practice-information .practice-name
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.print-page-theme-1 .middle-top
+{
+    float: left;
+    width: 100%;
+    margin: 0 0 17px;
+}
+.print-page-theme-1 .print-note
+{
+    float:left;
+    width: 50%;
+}
+.print-page-theme-1 .print-note p
+{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 11px;
+    color: #322787;
+}
+.print-page-theme-1 .middle-bottom
+{
+    float: left;
+    width: 100%;
+}
+
+.print-page-theme-1 .payment-charges
+{
+    float: left;
+    width: 100%;
+    margin: 0 0 57px;
+}
+@media print {
+    .print-page-theme-1 .payment-info {
+        margin: 42px 0 0;
+    }
+}
+
+.print-page-theme-1 .line
+{
+    display: block;
+    border-top: 1px solid gray;
+    margin: 19px 0 0 15px;
+}
+.print-page-theme-1 .payment-info .payment-info-contents
+{
+    float: left;
+    width: 100%;
+    margin: 20px 0 0 15px;
+}
+
+.print-page-theme-1 .signature-label
+{
+    float: left;
+    font-weight: bold;
+    color: gray;
+}
+.print-page-theme-1 .signature-line
+{
+    float: left;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    margin: 13px 0 0 5px;
+}
+
+
+.print-page-theme-1 .heading-1 {
+    font-size: 13px;
+}
+.print-page-theme-1 .box-coloured-3 {
+    background-color: #D9E3FF;
+    padding: 9px 0;
+}
+
+.print-page-theme-1 .center
+{
+    text-align: center;
+    display: block;
+}
+.print-page-theme-1 .label-1
+{
+    color: #6d6d6d;
+    font-size: 12px;
+}
+.print-page-theme-1 .label-2
+{
+    font-size: 12px;
+}
+.print-page-theme-1 .line-height-1 tbody tr
+{
+    line-height: 27px;
+}
+
+.print-page-theme-1 .patient-statement-header
+{
+    margin: 0 0 5px;
+}
+.print-page-theme-1 .patient-statement-header span
+{
+    display: block;
+    width: 172px;
+    margin: 0 auto;
+    padding: 8px 0;
+    background: #190882;
+    color: #fff;
+    text-align: center;
+}
+.print-page-theme-1 .patient-statement-contents
+{
+}

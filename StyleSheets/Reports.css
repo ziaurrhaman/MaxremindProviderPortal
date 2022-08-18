@@ -1,0 +1,544 @@
+﻿
+
+
+.report-viewer-wrapper
+{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.report-tool-icon
+{
+    float: left;
+    margin: 5px 0 0;
+    width: 28px;
+}
+.report-print-icon
+{
+}
+.report-print-icon img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.report-export-wrapper
+{
+    position: relative;
+    width: 40px;
+    height: 32px;
+}
+.custom-export-drop-down
+{
+    width: 33px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+.custom-export-icon
+{
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    z-index: 1;
+}
+.report-tools img
+{
+    border: none;
+}
+
+.message
+{
+    float: right;
+}
+
+
+.pagerReport
+{
+    color: Gray;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #DFDCCD;
+    background: -moz-linear-gradient(top, #DFDCCD 0%, #d1cec2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#DFDCCD), color-stop(100%,#d1cec2));
+    background: -webkit-linear-gradient(top, #DFDCCD 0%,#d1cec2 100%);
+    background: -o-linear-gradient(top, #DFDCCD 0%,#d1cec2 100%);
+    background: -ms-linear-gradient(top, #DFDCCD 0%,#d1cec2 100%);
+    background: linear-gradient(top, #DFDCCD 0%,#d1cec2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DFDCCD', endColorstr='#d1cec2');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#DFDCCD', endColorstr='#d1cec2')";
+    -webkit-background-clip: padding-box;
+}
+
+.pagerReport .PageEntries
+{
+    float: left;
+}
+
+.PageButtonsReports
+{
+    float: left;
+    padding-top: 8px;
+}
+
+.pagerReport .PageButtonsReports li
+{
+    float: left;
+}
+
+.pagerReport .PageButtonsReports li a
+{
+    height: 25px;
+    width: 20px;
+    color: #333333;
+    text-align: center;
+    margin-left: 7px;
+    line-height: 25px;
+    float: left;
+}
+
+.PageButtonsReports .iconFirst
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('../Images/pagingSprite.png');
+    margin: 5px 0 0 10px;
+    background-position: 0px 0px;
+}
+
+.PageButtonsReports .iconNext
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('../Images/pagingSprite.png');
+    margin: 5px 5px 5px 0;
+    background-position: 1px 33px;
+}
+
+.PageButtonsReports .iconPrevious
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('../Images/pagingSprite.png');
+    margin: 5px;
+    background-position: -1px 49px;
+}
+
+.PageButtonsReports .iconLast
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url('../Images/pagingSprite.png');
+    margin: 5px 0 0;
+    background-position: 0px 17px;
+}
+
+
+.paging-hidden-buttons
+{
+    display: none;
+}
+.report-page-title
+{
+    float: left;
+    margin: -6px 2px 0 7px;
+}
+.report-input-page-number
+{
+    width: 40px !important;
+   /* margin: 2px 0 0;*/
+    padding: 3px !important;
+    text-align: center;
+    float:left;
+}
+.report-page-number
+{
+    float: left;
+    margin: -6px 0 0 2px;
+}
+.report-edit-wrapper
+{
+    float: right;
+    margin: 0 20px 0;
+}
+.report-dialog-inner
+{
+    margin: 10px;
+    border: 1px solid #DFDCCD;
+}
+.report-dialog-inner h3
+{
+    background-color: #DFDCCD;
+    margin: 0;
+    padding: 7px;
+}
+.report-dialog-content
+{
+    padding: 10px;
+}
+
+.spanInfo
+{
+    margin: 3px 0 2px;
+    float: left;
+}
+
+.pagerReport .PageEntries
+{
+    width: auto !important;
+}
+.report-tools
+{
+    float: left;
+    margin: 2px 0 0;
+}
+
+
+.ReportGrid
+{
+    float: left;
+    width: 100%;
+}
+
+
+.ReportGrid .TitleBar
+{
+    position: relative;
+    height: 33px;
+    line-height: 30px;
+    background: #E9E9E9;
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9));
+    background: -webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: -o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: -ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+    border: 1px solid #CCC;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    color: #444;
+    padding-left: 10px;
+}
+
+.ReportGrid tr
+{
+    height: 25px;
+}
+
+/*
+.ReportGrid tr:hover
+{
+    background-color: #D0E6FB;
+}
+*/
+
+.ReportGrid th
+{
+    font-size: 12px;
+    color: #444;
+    border-left: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    font-weight: bold;
+    height: 30px;
+    line-height: 19px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.ReportGrid th:first-child
+{
+    border-top-left-radius: 4px;
+    border-left: 1px solid transparent;
+}
+
+.ReportGrid th:last-child
+{
+    border-top-right-radius: 4px;
+    border-right: 1px solid transparent;
+}
+
+.ReportGrid td
+{
+    padding: 7px 5px;
+    border-left: 1px solid #C4C4C4;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    font-size: 12px !important;
+}
+
+.ReportGrid td:first-child
+{
+    border-left: 1px solid transparent;
+}
+
+.ReportGrid td:last-child
+{
+    border-right: 1px solid transparent;
+}
+
+.ReportGrid .alternatingRow
+{
+    background-color: #F7F7F7;
+}
+
+.ReportGrid .message
+{
+    background-color: #e4e4dc;
+    height: 30px;
+    line-height: 30px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.WidgetReport
+{
+    border: 1px solid #CCC;
+    float: left;
+    width: 100%;
+    overflow: auto;
+}
+
+.WidgetReportTitle
+{
+    position: relative;
+    height: 33px;
+    line-height: 33px;
+    background: #E9E9E9;
+    background: -moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9));
+    background: -webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: -o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: -ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    background: linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
+    border: 1px solid #CCC;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    color: #444;
+    padding-left: 10px;
+}
+
+.WidgetReportTitle span
+{
+    color: #444;
+    font-weight: bold;
+}
+
+.WidgetReportContent
+{
+    border-top: 1px solid #FFF;
+    float: left;
+    width: 100%;
+    overflow:auto;
+}
+.WidgetReportMainContent
+{
+    padding: 10px;
+}
+
+
+.report-filter-search-box
+{
+    float: left;
+}
+
+.report-filter-row
+{
+    float: left;
+    width: 100%;
+    margin: 0 0 10px;
+}
+.report-filter-label
+{
+    font-weight: bold;
+    float:left;
+}
+
+.report-list-container
+{
+    width: 100%;
+    float: left;
+}
+
+.report-list-container a
+{
+    color: Blue;
+    margin: 10px 5px;
+    font-size: 13px;
+}
+.report-list-container a:hover
+{
+    color: #052B64 !important;
+}
+
+.report-active
+{
+    color: #052B64 !important;
+}
+
+.vital-report-sub
+{
+    border-bottom: 1px solid;
+    float: left;
+    width: 96%;
+    padding: 0 2% 20px;
+}
+
+.h-container
+{
+    float: left;
+    width: 100%;
+}
+.graph-container
+{
+    float: left;
+    height: 202px;
+    width: 33%;
+    border: 1px solid #CCCCCC;
+}
+.table-container
+{
+    float: right;
+    width: 66%;
+}
+.report-column-title
+{
+    float: left;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+.recertified_Yes
+{
+    color: brown;
+}
+.taskScheduledDateRed
+{
+    color: red;
+}
+.taskDateRed
+{
+    color: red;
+}
+.timeInRed
+{
+    color: red;
+}
+.timeOutRed
+{
+    color: red;
+}
+.ValidTaks_No
+{
+    color: red;
+}
+
+.side-menu
+{
+    padding: 0;
+    width: 135px;
+}
+.side-menu .WidgetContent ul
+{
+}
+.side-menu .WidgetContent ul li
+{
+    border-bottom: 1px solid darkgreen;
+    float: left;
+    width: 100%;
+}
+.side-menu .WidgetContent ul li a
+{
+    width: 92%;
+    float: left;
+    padding: 14px 4% 6px;
+    font-weight: bold;
+    color: darkgreen;
+}
+.side-menu .WidgetContent ul li a:hover
+{
+    background-color: #D0E6FB;
+}
+.side-menu-fixed
+{
+    position: fixed;
+    top: 111px;
+}
+.Widget
+{
+    margin-bottom: 10px;
+}
+.div-reports-content
+{
+     width: 170px; 
+     float: left;
+     position:relative;
+}
+.report-icon
+{
+    background: url('../Images/reports-icon.png') no-repeat;
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+.report-icon-title
+{
+    color: #439abf;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 5px;
+    float: left;
+    width:80%;
+
+}
+.report-icon-text
+{
+    font-size:12px;
+}
+
+.filterIcon {
+    background-image: url('../../Images/filter-Icon.png');
+    background-repeat: no-repeat;
+    height: 6px;
+    width: 11px;
+    cursor: pointer;
+    float: left;
+    margin-left: 2px;
+}
+
+.asc {
+    background-position: 0 0;
+    margin-top: 7px;
+}
+
+.desc {
+    background-position: 0 -5px;
+    margin-top: 7px;
+}

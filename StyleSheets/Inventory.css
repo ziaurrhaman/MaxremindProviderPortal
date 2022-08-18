@@ -1,0 +1,155 @@
+﻿
+
+.bread-crumb {
+}
+
+.bread-crumb a {
+    color: Blue;
+}
+
+.bread-crumb a:hover {
+    text-decoration: underline;
+}
+
+
+.sales-menu-list-box {
+}
+
+.sales-menu-list-box a {
+    color: Blue;
+}
+
+.sales-menu-list-box a:hover {
+    text-decoration: underline;
+}
+
+
+.inventory-form-wrapper {
+    padding: 20px 20px 100px;
+    float: left;
+}
+
+.inventory-sub-box-wrapper {
+    margin: 0 auto;
+}
+
+.inventory-form-heading {
+    text-align: center;
+}
+
+.inventory-sub-box {
+    border: 1px solid gray;
+    float: left;
+    padding: 10px 1%;
+    margin: 0 1%;
+}
+
+.inventory-item-table td {
+}
+
+.sales-item-view-row td {
+    text-align: center;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.spaneditdone {
+    background-image: url('../Images/edit-done.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 18px;
+    background-position: left;
+    padding-left: 18px;
+    cursor: pointer;
+}
+
+.spaneditcancel {
+    background-image: url('../Images/edit-cancel.png');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 18px;
+    background-position: left;
+    padding-left: 18px;
+    cursor: pointer;
+}
+
+.inventory-action-wrapper {
+    float: left;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.inventory-item-entry-wrapper {
+    margin: 0 auto;
+}
+
+.item-tax-types {
+    margin: 0 auto;
+}
+
+.item-categories {
+    margin: 0 auto;
+}
+
+.sales-types {
+    margin: 0 auto;
+}
+
+.redirect-menu {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.redirect-menu a {
+    color: Blue;
+    text-decoration: none;
+}
+
+.redirect-menu a:hover {
+    text-decoration: underline;
+}
+
+.suppliers {
+    margin: 0 auto;
+}
+
+.suppliers-contact {
+    margin: 0 auto;
+}
+
+
+.tab-div {
+}
+
+.action-wrapper-purchaseOrders {
+    width: 46px;
+}
+
+.action-wrapper-purchaseOrders a {
+    float: left;
+}
+
+.action-wrapper-purchaseOrders span {
+    float: left;
+}
+
+
+.quicklaunch a, .quicklaunch input[type="button"], input[type="submit"] {
+    line-height: 0;
+    padding: 14px 5px;
+}
+
+.WidgetTitle span {
+    margin: 0 0 0 -33px; !important;
+}

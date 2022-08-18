@@ -1,0 +1,589 @@
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <span class="report-column-title">#</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Claim Id</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Account No.</span><span class="filterIcon asc"></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Patient Name</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Date Of Birth</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Date Of Service</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Procedure Code</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Charges</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Primary Submission Status</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">File Name</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Insurance</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Place Of Service</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Location</span><span></span>
+                                                    </th>
+                                                    <th class="asc" onclick="SortReportList(this,'ClaimStatus');">
+                                                        <span class="report-column-title">Post Date</span><span></span>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyReportList"><tr>
+                          <td style="text-align: center;">
+                              1
+                          </td>
+                          <td>
+                              34372
+                          </td>
+                          <td>
+                              19569
+                          </td>
+                          <td>
+                              CAUSEY, GREGORY
+                          </td>
+                          <td>
+                              05/26/1978
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_0" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              2
+                          </td>
+                          <td>
+                              34371
+                          </td>
+                          <td>
+                              19573
+                          </td>
+                          <td>
+                              Contreras, Jose W
+                          </td>
+                          <td>
+                              01/14/1963
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_1" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              MOLINA
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              3
+                          </td>
+                          <td>
+                              34370
+                          </td>
+                          <td>
+                              19566
+                          </td>
+                          <td>
+                              Bryant, Judy
+                          </td>
+                          <td>
+                              12/18/1954
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_2" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              4
+                          </td>
+                          <td>
+                              34368
+                          </td>
+                          <td>
+                              19476
+                          </td>
+                          <td>
+                              GARRISON, ALORA
+                          </td>
+                          <td>
+                              04/21/1960
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_3" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Blue Cross and Blue Shield of Texas
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              5
+                          </td>
+                          <td>
+                              34367
+                          </td>
+                          <td>
+                              19558
+                          </td>
+                          <td>
+                              MIWODOR, KOFFI
+                          </td>
+                          <td>
+                              10/01/1958
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_4" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Blue Cross and Blue Shield of Texas
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              6
+                          </td>
+                          <td>
+                              34366
+                          </td>
+                          <td>
+                              19570
+                          </td>
+                          <td>
+                              LIS, MICHAEL
+                          </td>
+                          <td>
+                              01/01/1960
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_5" style="display:block;">"99233"</span>
+                          </td>
+                          <td>
+                              $159.45
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              7
+                          </td>
+                          <td>
+                              34364
+                          </td>
+                          <td>
+                              18663
+                          </td>
+                          <td>
+                              DAVIS, JEREMY P
+                          </td>
+                          <td>
+                              11/01/1980
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_6" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              8
+                          </td>
+                          <td>
+                              34362
+                          </td>
+                          <td>
+                              19469
+                          </td>
+                          <td>
+                              ELLSWORTH, MARK
+                          </td>
+                          <td>
+                              04/30/1956
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_7" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Superior Health Plan
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              9
+                          </td>
+                          <td>
+                              34361
+                          </td>
+                          <td>
+                              19624
+                          </td>
+                          <td>
+                              EICHELMAN, MELODY
+                          </td>
+                          <td>
+                              05/25/1959
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_8" style="display:block;">"99223"</span>
+                          </td>
+                          <td>
+                              $310.02
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              10
+                          </td>
+                          <td>
+                              34359
+                          </td>
+                          <td>
+                              19622
+                          </td>
+                          <td>
+                              GRANT, JAMES
+                          </td>
+                          <td>
+                              01/12/1959
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_9" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              UHC
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              11
+                          </td>
+                          <td>
+                              34356
+                          </td>
+                          <td>
+                              19621
+                          </td>
+                          <td>
+                              WALLER, JIMMY
+                          </td>
+                          <td>
+                              09/13/1945
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_10" style="display:block;">"99232"</span>
+                          </td>
+                          <td>
+                              $111.31
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              UHC
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr> 
+        
+               <tr>
+                          <td style="text-align: center;">
+                              12
+                          </td>
+                          <td>
+                              34353
+                          </td>
+                          <td>
+                              19195
+                          </td>
+                          <td>
+                              BOATRIGHT, ROBERT
+                          </td>
+                          <td>
+                              12/14/1941
+                          </td>
+                          <td>
+                              07/03/2018
+                          </td>
+                          <td>
+                              <span id="rptReportData_lblProcedureCode_11" style="display:block;">"99233"</span>
+                          </td>
+                          <td>
+                              $159.45
+                          </td>
+                          <td>
+                              Billed
+                          </td>
+                          <td>
+                              2018-07-03 23
+                          </td>
+                          <td>
+                              Medicare TX
+                          </td>
+                          <td>
+                              Inpatient Hospital
+                          </td>
+                          <td>
+                              KINDRED HOSPITAL DALLAS
+                          </td>
+                          <td>
+                              07/05/2018
+                          </td>
+                      </tr></tbody>
+                                </table>
+                            

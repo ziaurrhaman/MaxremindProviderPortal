@@ -1,0 +1,365 @@
+﻿body {
+}
+/*Created by Faiza Bilal 8/6/2021
+*/
+.main {
+    /* width: 50%;
+    float: left;
+    margin-right: 50%;*/
+    /*border: 2px solid #ccc;*/
+    background-color: white;
+    box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 13%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cptDivs {
+   /* width: 49%;
+    float: right;
+    padding-left: 50%;
+    margin-top: -59.5%*/
+}
+
+.amount {
+    line-height: 30px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.amount_label {
+    float: left;
+}
+
+.Payment_box {
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px 0 rgba(0,0,0,.125);
+}
+
+.Payment_box_1 {
+    border-radius: 8px;
+    width: 100%;
+    background-color: white;
+    min-height: 130px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0px 0px 2px 0 rgb(0 0 0 / 13%);
+    overflow: hidden;
+}
+
+.Payment_box_left {
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+  /*  height: 210px;*/
+    /*border: 1px solid #ccc;*/
+    box-shadow: 0px 0px 2px 0 rgba(0,0,0,.125);
+    overflow:hidden;
+}
+
+.div_payment_box {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.div_payment_box_right {
+    width: 49%;
+    float: right;
+    /*padding-right: 10px;
+    padding-left: 10px;*/
+    box-sizing: border-box;
+    /*margin-left: 10px;*/
+}
+.div_payment_right_box {
+    width: 48%;
+    float: right;
+    /*padding-right: 10px;
+    padding-left: 10px;*/
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.div_payment_box_left {
+    width: 49%;
+    /* margin-left: 1%; */
+    float: left;
+    /* padding-right: 10px; */
+    /*padding-left: 10px;*/
+    box-sizing: border-box;
+}
+
+.div_payment_box_1 {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.Pl_0 {
+    padding-left: 0px !important;
+}
+
+.P20 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cptst {
+    text-align: center;
+    padding: 3px 70px
+}
+
+.cptfre {
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+    .content {
+        padding: 5px;
+    }
+
+.icon-box {
+    background: #3266fe;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:6px;
+}
+.icon-box-2 {
+    background: #0dcd94;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+    .icon-box i, .icon-box-2 i {
+        font-size: 2rem;
+        color: #fff;
+    } 
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .main {
+        width: 100%
+    }
+    
+    .cptDivs {
+        margin-top:6%;
+        width: 100%
+    }
+    .cptfre {
+        border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width:80px;
+    
+    }
+}
+@media only screen and (max-width: 1150px) {
+    /* For Tablets phones: */
+    .main {
+        width: 100%
+    }
+
+    .cptDivs {
+        margin-top: 2%;
+        width: 100%
+    }
+
+    .cptfre {
+        border: 2px solid black;
+        box-sizing: border-box;
+        border-radius: 10px;
+        
+    }
+}
+
+.col-left {
+    width: 42%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.dashboardManu {
+    width: 14.8%;
+    float: left
+}
+.col-right {
+    width: 43%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.outer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+/*svg.highcharts-root {
+    width: 100% !important;
+    margin-top: -40px;
+}*/
+.graph-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+.rpm-graph-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ClaimRPM {
+    width: 85%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    /*margin-top:-3em;*/
+}
+.PatientsRPM {
+    width: 85%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    /*margin-top:-21em;*/
+}
+
+@media screen and (max-width: 992px) {
+    .dashboardManu {
+        width: 100%;
+        float: left;
+    }
+
+    .ClaimRPM {
+        width: 100%;
+        float: none;
+    }
+
+    .col-left {
+        width: 100%;
+        float: none;
+    }
+
+    .div_payment_box_left {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .div_payment_box_right {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+
+/*    .highcharts-container {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+        .highcharts-container svg.highcharts-root {
+            height: auto !important;
+        }*/
+
+    .col-right {
+        width: 100%;
+        float: none;
+    }
+
+    .div_payment_right_box {
+        width: 100%;
+        float: none;
+        margin-left: 0;
+    }
+    .graph-box .content {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .PatientsRPM {
+        width: 100%;
+        float: none;
+    }
+}
+
+.ReportsRPM {
+    width: 85%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+/*div#PatientContainer {
+    width: 85%;
+}*/
+div#PatientRPM {
+    width: 85%;
+    float: left;
+}
+.AllReportsRPM {
+    margin-left:15%;
+    margin-top: 0;
+    position: relative;
+}
+div#divAllReportsRPM {
+    position: absolute;
+    top: 21px;
+}
+.btnAllReportsRPM {
+    border: 1px solid #439ABF;
+    background-color: #006291;
+    color: white;
+    border-radius: 5px;
+    width: auto;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    cursor:pointer;
+}
+    .btnAllReportsRPM:focus {
+        background-color: #006291;
+        color: white;
+    }
+.Reports {
+    padding-top:20px;
+    width: 85%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.ActiveBtn {
+    background-color: rgb(238,239,239);
+    color: black;
+}
+.report-export{
+    margin-left:45%;
+    margin-bottom:5px;
+}
+.btnprint {
+    border: 1px solid #439ABF;
+    background-color: #006291;
+    color: white;
+    border-radius: 5px;
+    width: auto;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}

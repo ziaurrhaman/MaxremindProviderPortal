@@ -1,0 +1,51 @@
+﻿body * {
+    display: none;
+}
+
+.printable {
+    display: block;
+}
+.divPatientStatement{
+
+    border: 1px solid #d3d4d4;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 3px;
+    color:#439abf;
+    cursor:pointer;
+    font-weight:bold;
+    box-sizing:border-box;
+}
+
+
+
+.divCheckEligibility {
+
+    border: 1px solid #d3d4d4;
+    width: 49%;
+    float: left;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 3px;
+    color:#439abf;
+    cursor:pointer;
+    font-weight:bold;
+    box-sizing:border-box;
+}
+
+.divPatientStatement:hover {
+    background-color:#439abf;
+    color:white
+}
+
+.divCheckEligibility:hover {
+  background-color:#439abf;
+    color:white
+}

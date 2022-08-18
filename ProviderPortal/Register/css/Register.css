@@ -1,0 +1,252 @@
+﻿body{
+    width:100%;
+    font-family: Arial, Verdana,Sans-Serif, Helvatica !important;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    vertical-align: baseline;
+    background-color:#439abf;
+    font-size: 12px;
+    color: #444;
+    overflow:auto;
+}
+.container{
+    display:block;
+    width:650px;
+    min-width:650px;
+    margin:auto;
+    margin-top:30px;
+    box-sizing:border-box;
+}
+
+/*left panel*/
+.form-panel{
+    display:block;
+}
+.clear-fix{
+    clear:both;
+}
+.resgistration-form{
+    width:55%;
+    height:594px;
+    box-sizing:border-box;
+    background-color: white;
+    float:left;
+}
+
+.resgistration-form-body{
+    padding:5% 15%;
+    margin-bottom:70px;
+}
+
+.registration-form-control-group{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    white-space:nowrap;
+    flex-direction:row;
+    align-items:center;
+    box-sizing:border-box;
+    height: 33px;
+    padding:0px;
+    border-bottom: #d2d9e0 2px solid;
+    margin-bottom:10px;
+}
+
+.resgistration-form-body input[type=password],
+.resgistration-form-body input[type=text],
+.resgistration-form-body input[type=email]
+{
+    box-sizing:border-box;
+    outline:none;
+    width:93%;
+    height:100%;
+    border:none;
+    padding-left:5px;
+    margin:0px;
+
+}
+#Register{
+     box-sizing:border-box;
+   height: 40px;
+    border: none;
+     background-color: #15688f;
+   color: white;
+   width:100%;
+     font-size: 16px;
+     margin-top:40px;
+     font-weight:bold;
+}
+#Register:hover{
+    cursor:pointer;
+}
+
+.img-to-left{
+    background-position:center right;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.icon{
+    cursor:pointer;
+    display:inline-block;
+     background-position:center;
+     background-repeat:no-repeat;
+     background-size:cover;
+    width:15px;
+    height:15px;
+}
+.user-back{
+      background: url('../../../Images/icon-sprite_regular(16x16).png')-25px -550px;
+}
+.email-back{
+    background-image:url('../../../images/mail16-01.png');
+}
+.password-back{
+    background-image:url('../../../images/pass16-01.png');
+}
+.c-password-back{
+    background-image:url('../../../images/confirm pass14-01.png');
+}
+.npi-back{
+    background-image:url('../../../images/circle14-01.png');
+}
+
+
+/* header */
+.resgistration-form-header{
+    width:100%;
+    margin-top:50px;
+    margin-bottom:35px;
+}
+.sign-up-logo{
+    background-image:url('../../../Images/logo_maxremind.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    width: 200px;
+    height: 35px;
+    margin:auto;
+}
+.sign-up-header-text{
+    height: 30px;
+    box-sizing: border-box;
+    width:fit-content;
+    padding:10px 0px;
+    margin:0px;
+    margin:auto;
+}
+
+
+
+/*right panel*/
+.text-panel{
+    width: 45%;
+    height:594px;
+    background-color: #dadbdc;
+    padding-left:10px;
+    padding-right:10px;
+    box-sizing:border-box;
+    float:left;
+}
+
+.text-panel-header{
+    margin-top:85px;
+    font-weight:300;
+    font-size:1.3em;
+}
+.text-panel-body{
+    margin-top:30px;
+}
+.text-important{
+    border:none;
+    border-bottom:1px solid #439abf;
+}
+.text-panel-body .text-panel-text{
+    line-height:1.5em;
+    font-size:1.2em;
+}
+.AlreadyExixtAccount{
+    width:100%;
+    float:left;
+    margin-top:10px;
+}
+/*success message card*/
+.message_panel{
+    display:none;
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 10px;
+    border-radius:5px;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    margin:auto;
+    margin-top:200px;
+}
+
+
+.message-card{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    height:fit-content;
+}
+.message-card h2{
+    width:fit-content;
+}
+.message-card>a{
+    margin-left:10px;
+    background:#15688f;
+    color:white;
+    padding:10px 10px;
+    font-weight:bold;
+    border-radius:5px;
+    text-decoration:none;
+    white-space:nowrap;
+    text-justify:auto;
+    width:fit-content;
+}
+.show{
+    display:block !important;
+}
+.error-block{
+    display:none;
+    background-color:#f2dede;
+    border:1px solid #ebccd1;
+    color:#a94442;
+    border-radius:3px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:10px;
+    text-align:center;
+}
+/*validation*/
+
+.invalid{
+    border-bottom-color:darkred;
+}
+
+
+
+/*nikalne ke liya*/
+#divOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999998;
+    background: rgba(0,0,0,0.4);
+}
+
+#divLoading {
+    position: absolute;
+    display: none;
+    top: 200px;
+    left: 200px;
+    z-index: 999999999;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1px;
+}

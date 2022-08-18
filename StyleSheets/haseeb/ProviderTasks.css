@@ -1,0 +1,38 @@
+﻿body {
+}
+
+
+#providers-wrapper .heading-span
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#task-types-wrapper
+{
+    clear: both;
+    height: 30px;
+    margin: 0 0 15px;
+}
+
+#providers-wrapper
+{
+    clear: both;
+}
+
+.box-list-wrapper
+{
+    padding: 5px;
+    width: 200px;
+}
+
+.selected-row
+{
+    background-color: #B4CADF !important;
+}
+
+
+.for-label
+{
+    cursor: pointer;
+}

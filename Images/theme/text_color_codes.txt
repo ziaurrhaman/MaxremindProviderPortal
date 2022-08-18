@@ -1,0 +1,20 @@
+Menu Main Navigation : 
+
+
+Blue Text 
+
+Color code : #01182c
+Font : Helvetica
+size : 13px;
+
+
+Grey Text
+
+Color code : #656565
+Font : Helvetica
+size : 13px;
+
+
+Body uner menu 
+
+Background Color : #eeeff0

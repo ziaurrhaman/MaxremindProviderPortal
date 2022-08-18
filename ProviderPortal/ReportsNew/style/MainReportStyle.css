@@ -1,0 +1,1072 @@
+﻿/*.Hide{
+    display:none;
+}*/
+body {
+    font-family: Calibri;
+}
+
+#ReportsTag {
+    font-size: 18px;
+    float: left;
+    border-bottom: 1px solid #439abf;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.div_leftReportList {
+    background-color: #f7f7f7;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /*margin-left: 13px;*/
+    margin-top: 4px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.div_RightReportShow {
+    /*float: right;
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 43px;*/
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-top: 43px;*/
+}
+
+.ReportsCategoryHeader {
+    font-weight: bold;
+    width: 92%;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+.tdCategory {
+    border-bottom: 1px solid #439abf;
+    padding: 5px 0px 5px 0px;
+    box-sizing: border-box;
+    width: 90%;
+    float: left;
+    margin-left: 13px;
+}
+
+.nametd {
+    float: left;
+    padding-left: 15px;
+    padding-top: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.Report_Header {
+    background-color: #eeefef;
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #b7b4b4;
+    box-sizing: border-box;
+    height: 32px;
+    border-bottom: none;
+}
+
+.Report_Body {
+    max-height: 58vh;
+    border: 1px solid #b7b4b4;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding-right: 5px;
+    box-sizing: border-box;
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.Report_Footer {
+    background-color: #eeefef;
+    width: 100%;
+    float: left;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid #b7b4b4;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+.Report_Footer_child {
+    float: right;
+    margin-left: 10px;
+    background-color: white;
+    color: teal;
+    border: 1px solid #b7b4b4;
+    border-radius: 3px 4px;
+}
+
+.Reports_Rows_Per_Page {
+    margin-left: 1%;
+}
+
+.report-export {
+    margin-left: 43%;
+}
+
+.lblTotalPages {
+    color: blue;
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.txt_page_Number {
+    color: blue;
+    float: right;
+    margin-left: 1px;
+    height: 22px !important;
+    width: 5% !important;
+    text-align: center;
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    box-sizing: border-box;
+}
+
+.GridReports {
+    /*float: left !important;*/
+    /*width: 100% !important;*/
+}
+
+    .GridReports table thead tr {
+        height: 35px !important;
+    }
+
+#tbodyReportList tr:nth-child(odd) {
+    background: #EEEEEE !important;
+}
+
+.GridReports > table > tbody > tr {
+    height: 25px !important;
+}
+
+.lblReportName {
+    color: #696868 !important;
+}
+
+.message {
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+    text-align:center;
+    padding:10px 20px;
+    width:100%;
+}
+
+#Maindiv {
+    background-color: white;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+#ddlPaging, #ddlExportTo {
+  /*  height: 25px;
+    width: 64px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;*/
+}
+
+.btn_report {
+    height: 22px !important;
+    min-width: 50px !important;
+    background-image: none !important;
+    border-bottom: none !important;
+    background-color: white !important;
+    color: #079a9a !important;
+    padding-top: 4px !important;
+}
+
+.ReportTiles {
+    /*position: absolute;
+    width: 76%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 21%;
+    margin-top: 13px;
+    border-bottom: 1px solid #439abf;*/
+    position: relative;
+    width: 76%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 18px;
+    margin-top: 13px;
+    border-bottom: 1px solid #439abf;
+}
+
+.widgetsReportTiles {
+    padding-top: 5px;
+    border: 1px solid #4fafd8;
+    background: #4fafd8;
+    color: #439abf;
+    margin-right: 5px;
+    float: left;
+    height: 28px;
+    padding-left: 5px;
+    padding-right: 16px;
+    font-size: 13px;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.reportcloseicon {
+    width: 14px; /*15px;*/
+    float: right;
+    position: absolute;
+    margin-left: 0.5px; /* margin-left: 10px; */
+    margin-top: 0.5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black; /*color: white;*/
+    cursor: pointer;
+    text-align: center;
+    padding: 0px 0px 1px;
+}
+
+.reportType {
+    width: 100%;
+    float: left;
+    padding-right: 1px; /*padding-right: 5px;*/
+    box-sizing: border-box;
+}
+
+
+.BalnceDuefilter, .AppointmentSummaryfilter {
+    width: 100%;
+    height: 30px;
+    background-color: #f7f7f7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.patientInput {
+    height: 18px !important;
+    float: left;
+    width: 120px !important;
+    margin-left: 5px;
+}
+
+#filterbtn, #filterbtnAppointment {
+    /*height: 30px !important;
+    width: 50px !important;
+    float: left;
+    background-color: #139de2 !important;
+    background-image: none !important;
+    color: white;
+    font-size: 14px;
+    font-family: arial;
+    margin-top: 0;
+    margin-left: 5px;*/
+}
+
+.lblMargin {
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filterIcon {
+    background-image: url('../style/filter-Icon.png');
+    background-repeat: no-repeat;
+    height: 6px;
+    width: 11px;
+    cursor: pointer;
+    float: left;
+    margin-left: 2px;
+    filter: brightness(100);
+}
+
+.asc {
+    background-position: 0 0;
+    margin-top: 7px;
+}
+
+.desc {
+    background-position: 0 -5px;
+    margin-top: 7px;
+}
+
+.reportcloseicon:hover {
+    /*background-color: #f50707;*/
+    color: #f50707;
+    border-radius: 15px;
+}
+
+#tbodyReportList {
+    /*text-align:center !important;*/
+    text-align: left !important;
+}
+
+    #tbodyReportList td {
+        padding-left: 10px !important;
+        border: 1px solid #ccc;
+        white-space: nowrap;
+    }
+#tbodyReportList1 {
+    /*text-align:center !important;*/
+    text-align: left !important;
+}
+
+    #tbodyReportList1 td {
+        padding-left: 10px !important;
+        border: 1px solid #ccc;
+    }
+#tbodyReportList1 tr:nth-child(odd) {
+    background: #EEEEEE !important;
+}
+
+.GridReports th {
+    /*text-align:left !important;*/
+    /*padding-left:10px !important;*/
+    background: #4fafd8;
+    color: #fff;
+    border: 1px solid;
+}
+
+.ReportGrid th {
+    text-align: left !important;
+    padding-left: 10px !important;
+}
+
+.ReportGrid tfoot td {
+    text-align: left !important;
+    padding-left: 10px !important;
+}
+
+.TimeSpan {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.BtmToatlTr {
+    /*text-align:left;*/
+    color: #fff;
+    background-color: #bfbfbf;
+}
+
+    .BtmToatlTr td {
+        padding-left: 10px !important;
+        text-align: center;
+    }
+
+#ReportFilterId {
+    width: 20%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    /*padding-top: 6px;*/
+}
+
+.ui-dialog .ui-dialog-buttonset .ui-button {
+    background-color: #439abf !important;
+    background-image: none !important;
+    border: 1px solid #0d9ade !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.ui-dialog-titlebar {
+    /*border-bottom: 1.5px solid #439abf !important;
+    padding-left: 10px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important; 
+    box-sizing: border-box !important;
+    background-image:none !important;
+    background-color:white !important;
+    color:black !important;*/
+}
+
+#footer {
+    padding-top: 25px;
+}
+
+.lblReportName:hover {
+    border: 1px solid #b7b4b4;
+    border-radius: 5px;
+}
+
+.warning {
+    background: url("../Images/warning.png") no-repeat scroll 10px center #FFD1D1;
+    border: 1px solid #F8ACAC;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    color: #555555;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 33px;
+    margin-right: 42% !important;
+    margin-top: -48px !important;
+}
+
+.divTable {
+    width: 100% !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border-color: none !important;
+    border: 1px solid #ccc !important;
+}
+
+.AlignString {
+    text-align: left !important;
+    padding-left: 6px !important;
+    box-sizing: border-box;
+}
+
+.AlignPayment {
+    text-align: right !important;
+}
+
+.AlignDate {
+    text-align: center !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.divReportName {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+    color: #fff !important;
+    line-height: normal !important;
+}
+/*.reportdropdown{
+    width:73.5% !important;
+}
+.BranceInput{
+    width: 79.5% !important;
+}
+#ClaimIdTxt{
+    width:92.8%;
+}
+*/
+
+
+
+
+.exportSummary {
+    float: left;
+    margin: 5px;
+}
+
+.linkClass {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+/********  Fix Table  *********/
+.GridReportsSummary {
+    overflow: initial !important;
+}
+
+#fixTable {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.SearchTextBoxForRpt {
+    margin-top: -6px !important;
+    height: 20px !important;
+    /*width: 95.7% !important;*/
+    float: left !important;
+    margin-left: -1px !important;
+}
+
+.reportdropdownNew {
+    width: 100% !important;
+    float: right !important;
+    position: relative !important;
+}
+
+.dropDownIconNewSearch {
+    width: 8.5%;
+    position: absolute;
+    left: 95%;
+    top: 6px;
+}
+
+.okclosebtnforrpt {
+    /*float: left;
+    height: 27px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0 2px;
+    background-color:white;*/
+    float: right;
+    height: 34px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid #ccc;
+    padding: 4px 2px;
+    background-color: white;
+}
+
+    .okclosebtnforrpt input {
+        height: 25px !important;
+        line-height: 22px !important;
+        padding: 0px 10px !important;
+    }
+
+.InitialMsg {
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    border: 2px solid #b7b4b4;
+    padding: 25px 10px;
+    color: black;
+    background: #eeefef;
+    width: 30%;
+    margin-left: auto;
+    border-radius: 6px;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+/******************************** New Layout Fixes in Report Module ***************************************/
+ul#ulMultiServiceProvider li {
+    padding-left: 4px !important;
+}
+
+ul#ulMultiPracticeLocation li {
+    padding-left: 4px;
+}
+
+.ddlselect {
+    overflow-x: hidden;
+}
+
+#ulMultiInsurances, #ulMultiStatus {
+    overflow-x: hidden;
+}
+
+    #ulMultiInsurances li span:nth-child(1) {
+        margin-left: 2px !important;
+        padding-right: 8px;
+    }
+
+    , #ulMultiStatus li span:nth-child(1) {
+        margin-left: 6px !important;
+        padding-right: 8px;
+    }
+
+    #ulMultiInsurances li span:nth-child(2), #ulMultiStatus li span:nth-child(2) {
+        margin-left: 0px !important;
+    }
+
+    #ulMultiInsurances li input[type="checkbox"], #ulMultiStatus li input[type="checkbox"] {
+        margin-top: 3px !important;
+    }
+
+div#divPayerDropDownSearch ul#ulMultiInsurances li label input[type="checkbox"] {
+    width: 16px !important;
+}
+
+div#divPayerDropDownSearch ul#ulMultiInsurances li label span.checkBoxName {
+    width: 93% !important;
+}
+
+div#divPayerDropDownSearch .dropDownIcon.insurance-select {
+    width: 34px !important;
+}
+
+div#printableArea table {
+    border: 1px solid #ccc;
+}
+/*.Report_Body .GridReports {
+    width: 100% !important;
+}*/
+.Report_Body .GridReports {
+    width: 100% !important;
+    max-height: 286px;
+    overflow-y: scroll;
+    padding-top: 0;
+    margin-top: 10px;
+}
+    .Report_Body .GridReports table thead {
+        position: sticky;
+        top: 0;
+    }
+tr.BtmToatlTr td span {
+    color: #fff !important;
+    text-decoration: inherit;
+    font-size: 14px;
+}
+.control-label {
+    float: left;
+    width: 70px;
+    padding-top: 5px;
+    text-align: right;
+}
+.controls {
+    display: inline-block;
+    padding-left: 20px;
+    margin-left: 180px;
+    margin-left: 0;
+}
+.inlineFilter {
+    float: right;
+    padding-right:10px;
+}
+    .inlineFilter .control-group {
+        float: left;
+    }
+.controls select {
+    height: 24px;
+}
+
+.controls input[type="text"] {
+    height: 24px;
+}
+.controls input[type="button"] {
+    padding: 1px;
+}
+.SearchCriteria {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 98%;
+    margin: 15px auto 0;
+    background: #f7f7f7;
+}
+    .SearchCriteria div#divPostType{
+        width: 24%;
+        margin-right: 1%;
+        float: left;
+    }
+    .SearchCriteria #divReportFilterBy div#divPracticeLocationId {
+        width: 24%;
+        margin-right: 1%;
+        float: left;
+    }
+    .SearchCriteria #divReportFilterBy div#divReportServiceProvider {
+        width: 24%;
+        margin-right:0%;
+        float: left;
+    }
+    .SearchCriteria #divReportFilterBy div#divClaimId {
+        width: 24%;
+        margin-right: 1%;
+        float: left;
+    }
+    .SearchCriteria #divReportFilterBy .divBranchName.DivBrName {
+        width: 24%;
+        margin-right: 1%;
+        float: left;
+    }
+    .SearchCriteria .radio_li {
+        float: left;
+        padding: 0 10px;
+    }
+    .SearchCriteria .radio_li input[type="radio"]{
+        margin-right:10px;
+    }
+        .SearchCriteria .radio_li label {
+            margin-top: -2px;
+            float: right;
+        }
+    .SearchCriteria .col60 br {
+        display:none;
+    }
+    .SearchCriteria .col40{
+        width: 50% !important
+    }
+    .SearchCriteria .col60{
+        width:40% !important
+    }
+    .SearchCriteria .col60 span.SpecificDates {
+        float: left;
+        width: 115px;
+        padding-top: 9px;
+    }
+    .SearchCriteria .col60 div {
+        float: left;
+    }
+    .SearchCriteria .col60 input#rbReportTimeSpanSpecificDates {
+        margin-right: 10px;
+        float: left;
+    }
+    .SearchCriteria .col60 table#timeDurationAgencyReportFilterBox {
+        width: 100% !important;
+        margin-top: 0px !important;
+    }
+    .SearchCriteria .divDialogReportFilterBoxInnerHeader {
+        background: none;
+    }
+    .SearchCriteria div#divClaimDetails {
+        font-size: 0;
+    }
+        .SearchCriteria div#divClaimDetails:before {
+            content: 'Filter';
+            font-size: 13px;
+            background: #006291;
+            padding: 0px 13px;
+            top: 21px;
+            position: absolute;
+            letter-spacing: 1px;
+        }
+.PatientBalReport th, .PatientBalReport td{
+    white-space:nowrap;
+}
+    .PatientBalReport th{
+        padding:0 10px;
+    }
+    @media screen and (min-width: 1000px) and (max-width: 1550px) {
+        .SearchCriteria .dropDownIcon {
+        margin-right: 0% !important;
+    }
+}
+@media screen and (min-width: 1550px) and (max-width: 2200px) {
+  
+    .SearchCriteria fieldset#divReportFilterBy .dropDownIcon {
+        margin-right: 1% !important;
+    }
+}
+/*.inlineFilter {
+    float: right;
+    padding-right: 37px;
+    position: absolute;
+    top: 147px;
+    right: 39px;
+}*/
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+    .SearchCriteria fieldset#divReportFilterBy .spnBranchName {
+        width: 34% !important;
+    }
+
+    .SearchCriteria fieldset#divReportFilterBy .BranceInput {
+        width: 66% !important;
+        float: left;
+    }
+}
+    @media screen and (min-width: 1000px) and (max-width: 1600px) {
+        .SearchCriteria .spnBranchName {
+            /* width: 24% !important;*/
+        }
+
+        .SearchCriteria .BranceInput {
+            width: 75%;
+        }
+
+        .SearchCriteria .dropDownIcon {
+            margin-right: 3% !important;
+        }
+
+        .SearchCriteria .col60 {
+            width: 45% !important;
+        }
+
+        .SearchCriteria .col40 {
+            width: 45% !important;
+        }
+
+        .SearchCriteria .col60 span.SpecificDates {
+            width: auto;
+        }
+    }
+
+    .SearchCriteria input.btn.primary {
+        padding: 4px 14px !important;
+        margin-top: -11px;
+        background: #006291;
+        color: #fff;
+        text-shadow: none;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+        .SearchCriteria input.btn.primary:focus {
+            box-shadow: none !important;
+        }
+
+    .SearchCriteria div#divRowRdo * {
+        width: auto;
+    }
+
+    .SearchCriteria div#divRowRdo {
+        display: flex;
+        align-items: center;
+    }
+
+    .SearchCriteria .SpecificDates label {
+        margin-top: -2px;
+        float: left;
+        padding-right: 15px;
+    }
+
+    .SearchCriteria .SpecificDates input#rbReportTimeSpanSpecificDates {
+        margin-right: 10px;
+        float: left;
+    }
+
+    .SearchCriteria .SpecificDates {
+        float: left;
+    }
+
+    .SearchCriteria fieldset#divReportTimeSpan {
+        padding-bottom: 4px;
+    }
+
+    .AllPatientDetails {
+        float: left;
+    }
+
+        .AllPatientDetails a {
+            color: blue;
+        }
+.SearchCriteria fieldset#divReportFilterBy {
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    border-color: none !important;
+    border: 1px solid #ccc !important;
+}
+.reportdropdown {
+    padding: 5px 0px 4px 4px;
+    width: 74.6%;
+    float: right;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #000000;
+    text-align: left;
+    min-width: 175px;
+    height: 20px;
+    z-index: auto !important;
+}
+.SearchCriteria fieldset#divReportFilterBy .dropDownIcon {
+    /*margin-top: -20px;*/
+}
+.SearchCriteria fieldset#divReportFilterBy legend {
+    font-weight: 600;
+    background: #006ebd;
+    padding: 0px 10px;
+    color: #fff;
+}
+.SearchCriteria fieldset#divReportTimeSpan legend{
+    font-weight: 600;
+    background: #006ebd;
+    padding: 0px 10px;
+    color: #fff;
+
+}
+.ddlselect {
+    /* float: left;
+    max-height: 170px;
+    overflow-y: auto;
+    margin-bottom: -2px;
+    border: 1px solid #c4c4c4;
+    background: white;
+    margin-top: 6px;*/
+    float: left;
+    max-height: 170px;
+    overflow-y: auto;
+    margin-bottom: -2px;
+    border: 1px solid #c4c4c4;
+    background: white;
+    margin-top: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    padding: 4px;
+}
+.SearchCriteria .selectedText {
+    width: 92%;
+    height: 21px !important;
+    overflow: hidden;
+    top: 3px !important;
+    position: absolute;
+    white-space: nowrap;
+    margin-left: 2%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .SearchCriteria .radio_li {
+        padding: 0 3px !important;
+    }
+    table#timeDurationAgencyReportFilterBox {
+        width: 300px !important;
+    }
+    .SearchCriteria .dropDownIcon {
+        margin-right: 3% !important;
+        right: 0 !important;
+    }
+}
+div#divReportServiceProvider {
+    clear: both;
+}
+.SearchCriteria div#divReportServiceProvider {
+    clear: none;
+}
+.ui-dialog-content .Grid td {
+    font-size: 12px;
+}
+.ui-dialog.ui-widget .Grid {
+    padding: 0px;
+}
+.ddlselect.analysisddlselect {
+    /*float: left;
+    max-height: 170px;
+    overflow-y: auto;
+    margin-bottom: -2px;
+    border: 1px solid #c4c4c4;
+    background: white;
+    margin-top: 24px;
+    padding: 7px;*/
+}
+.SearchCriteria .unpostedfilter {
+  /*  width: 32% !important;
+    margin-right: 1%;
+    float: left !important;*/
+}
+.PostClaimsFilter .col-lg-3 div#divPracticeStaffOnNpiNum {
+    width: 100% !important;
+}
+.PostClaimsFilter .col-lg-3 div#divPlaceOfServiceReport {
+    width: 100% !important;
+}
+.PostClaimsFilter .col-lg-3 div#divReportReportType {
+    width: 100% !important;
+}
+.PostClaimsFilter .col-lg-3 div#divCPT {
+    width: 100% !important;
+}
+.PostClaimsFilter .spnBranchName {
+    /*width: 100% !important;*/
+}
+.PostClaimsFilter input.btn.primary {
+    margin-top: 27px !important;
+}
+.PostClaimsFilter input#txtServiceCode {
+    width: 100% !important;
+}
+.PostClaimsFilter div#divReportClaimStatus .reportdropdown {
+    width: 100% !important;
+    margin-top: 0px;
+}
+.PostClaimsFilter div#divFileSearch .reportdropdown {
+    width: 48% !important;
+    float: left !important;
+    min-width: 48% !important;
+}
+.ui-widget-overlay {
+    z-index: 99999 !important;
+}
+table.fixTable thead th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.GridReports table thead th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.GridReports table tr td {
+    padding-left: 6px;
+    padding-right: 6px !important;
+}
+thead.RpostClaimsThead {
+    position: relative !important;
+}
+.PayerAnalysisFilter .div-multi-checkboxes-wrapper.divPayerScenario {
+    width: 375px;
+    position: fixed;
+    z-index: 1;
+    min-width: 375px;
+    margin-top: 24px;
+}
+@media screen and (max-width: 1399px) and (min-width: 1280px) {
+    .PayerAnalysisFilter .div-multi-checkboxes-wrapper.divPayerScenario {
+        width: 240px;
+        min-width: 240px;
+    }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 1400px) {
+    .PayerAnalysisFilter .div-multi-checkboxes-wrapper.divPayerScenario {
+        width: 250px;
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1600px) {
+    .PayerAnalysisFilter .div-multi-checkboxes-wrapper.divPayerScenario {
+        width: 287px;
+        min-width: 287px;
+    }
+}
+
+@media screen and (max-width: 1980px) and (min-width: 1701px) {
+    .PayerAnalysisFilter .div-multi-checkboxes-wrapper.divPayerScenario {
+        width: 351px;
+        min-width: 351px;
+    }
+}
+.PayerAnalysisFilter .ddlselect.analysisddlselect {
+    top: 0 !important;
+}
+.SelectFilterMessage {
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    border: 2px solid #b7b4b4;
+    padding: 25px 10px;
+    color: black;
+    background: #eeefef;
+    width: 30%;
+    margin-left: auto;
+    border-radius: 6px;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+div#printableAreaRDC thead tr th {
+    position: sticky !important;
+    top: 0 !important;
+}
+div#printableAreaIns thead tr th {
+    position: sticky !important;
+    top: 0 !important;
+}
+div#printableAreaPS thead tr th {
+    position: sticky !important;
+    top: 0 !important;
+}
+@media screen and (max-width: 1440px) and (min-width: 900px) {
+    .ReportPostClaimSummary-date input[type="date"] {
+        width: 99px !important;
+    }
+}
+.ReportPostClaimSummary-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ReportPostClaimSummary-fields input:first-child {
+    margin-right:10px;
+}

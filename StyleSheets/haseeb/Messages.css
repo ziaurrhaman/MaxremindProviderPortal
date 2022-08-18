@@ -1,0 +1,203 @@
+﻿
+
+.main-top-bar
+{
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 5px gray;
+    -moz-box-shadow: 0 2px 5px gray;
+    -o-box-shadow: 0 2px 5px gray;
+    -webkit-box-shadow: 0 2px 5px gray;
+    height: 32px;
+    margin: 0 0 10px;
+    padding: 7px 14px 7px 8px;
+}
+
+.messages-main-container
+{
+    
+}
+
+.messages-list-container
+{
+    border: 1px solid #696969;
+    padding: 0 0 5px;
+}
+
+#tblMessagesMain
+{
+    width: 100%;
+    height: 700px;
+}
+#tblMessagesMain td
+{
+    vertical-align: top;
+}
+#tblMessagesMain #tblMessageMainLeft
+{
+    border-bottom: 1px solid #9E9B9B;
+    border-left: 1px solid #9E9B9B;
+    border-top: 1px solid #9E9B9B;
+    padding: 4px;
+    width: 320px;
+}
+#tblMessagesMain #tblMessageMainCenter
+{
+    width: 5px;
+    background-color: #E4E4E4;
+    border-top: 1px solid #E4E4E4;
+    border-right: 1px solid #9E9B9B;
+    border-bottom: 1px solid #E4E4E4;
+    border-left: 1px solid #9E9B9B;
+}
+#tblMessagesMain #tblMessageMainRight
+{
+    border-top: 1px solid #9E9B9B;
+    border-right: 1px solid #9E9B9B;
+    border-bottom: 1px solid #9E9B9B;
+}
+
+.tbl-mail-list
+{
+    cursor: pointer;
+    width: 100%;
+}
+.tbl-mail-list:hover .hovertd
+{
+    background-color: #C7E5FC;
+}
+.selected-td
+{
+    background-color: #C7E5FC;
+}
+.tbl-mail-list td
+{
+    padding: 4px;
+}
+.tbl-mail-list .tbl-mail-list-second
+{
+    width: 174px;
+}
+
+.tbl-mail-list .priority-icon
+{
+    height: 14px;
+    width: 12px;
+}
+.tbl-mail-list .delete-icon
+{
+    cursor: pointer;
+    height: 14px;
+    width: 12px;
+}
+
+.attachment-icon-class
+{
+    height: 8px;
+    margin: 4px 0 0;
+    width: 15px;
+}
+
+.alternatingRow {
+    background-color: #F7F7F7;
+}
+
+
+
+
+.message-datail-container
+{
+    
+}
+
+.message-datail-container .top-bar
+{
+    border-bottom: 1px solid #C5CDCD;
+    border-top: 1px solid #C5CDCD;
+    height: 27px;
+    padding: 10px;
+}
+
+
+.top-bar ul li
+{
+    display: inline;
+}
+.top-bar ul li a
+{
+    float: left;
+    margin: 0 0 0 11px;
+}
+
+.mail-icons
+{
+    color: #000000;
+    float: left;
+    height: 28px;
+    padding: 6px 0 0 36px;
+}
+
+.top-bar .reply
+{
+    background: url("../../Images/email/1360194360_email_reply.png") no-repeat scroll 0 0 transparent;
+}
+.top-bar .reply-all
+{
+    
+}
+.top-bar .forward
+{
+    background: url("../../Images/email/1360193992_email_forward.png") no-repeat scroll 0 0 transparent;
+}
+.top-bar .delete
+{
+    
+}
+
+
+
+.message-datail-container .content-area
+{
+    height: 600px;
+    overflow: auto;
+    padding: 20px 0 0 10px;
+}
+.content-area .tbl-detail-contents
+{
+    width: 100%;
+}
+.content-area .tbl-detail-contents .messagege-detail-labels
+{
+    font-weight: bold;
+}
+.content-area .message-detail-body
+{
+    padding: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+.compose
+{
+    background: url("../../Images/email/1360194001_email_compose.png") no-repeat scroll 0 0 transparent;
+    font-weight: bold;
+    padding: 9px 0 0 36px;
+}
+
+.compose-message-th
+{
+    height: 30px;
+    text-align: left;
+}
+
+.compose-message-heading
+{
+    border-bottom: 1px solid #C4CCCC;
+    padding: 0 0 5px;
+}

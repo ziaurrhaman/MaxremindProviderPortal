@@ -1,0 +1,244 @@
+﻿
+
+
+#timingWrapper
+{
+    background-color: #FCFDFD;
+    border: 2px solid #A6C9E2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.tblSub-Wrapper
+{
+    float:left;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+.tblSub
+{
+    border: 1px solid #C4C4C4;
+    border-collapse:collapse;
+    vertical-align:top;
+    width: 100%;
+}
+
+.tblSub, .tblSub td
+{
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.addBreaksWrapper
+{
+}
+
+.addBreaks-left
+{
+    border-right: 1px solid #C4C4C4;
+    width: 82px;
+}
+
+.InputBreakTime
+{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    border: 1px inset lightBlue;
+    padding: 4px;
+    width: 100px;
+}
+
+.linkAddRemove
+{
+    text-decoration:none;
+    color:Black;
+    cursor: pointer;
+    float: right;
+}
+
+.linkAddRemove span
+{
+    float:left;
+}
+.linkAddRemove img
+{
+    margin: 0 0 0 5px;
+}
+
+.trBreakTime
+{
+}
+
+
+.tblApplyTo
+{
+    border: 1px solid #C4C4C4;
+    border-collapse:collapse;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    vertical-align:top;
+    width: 100%;
+}
+
+.tblApplyTo th, .tblApplyTo td
+{
+    text-align: center;
+}
+
+.ApplyToHeadTr
+{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 97.5%;
+}
+
+.tblApplyTo tr th, .tblApplyTo tr td
+{
+    border: 1px solid #C4C4C4;
+}
+
+
+.button-right-align
+{
+    float:right;
+}
+
+
+.normal-detail-TimingsLinkWrapper
+{
+    text-align:right;
+    position:relative;
+}
+.linkSetting
+{
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.AdetailTimings
+{
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+/*Timing List*/
+
+#timingLocationsContainer
+{
+    margin: 15px 0 0;
+}
+.timingLocationWrapper
+{
+    background-color: #7BA031;
+    border: 1px solid #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 10px;
+    margin: 20px 0 0;
+}
+.tblLocationList
+{
+    width: 100%;
+}
+.timingLocationName
+{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+.timingInnerDayDetails
+{
+    background-color: #F4F7FC;
+    border: 1px solid #C4C4C4;
+    padding: 5px;
+}
+.tblInnerDayDetails
+{
+    border-collapse:collapse;
+    width: 100%;
+}
+.timingInnerLabel
+{
+    font-size: 13px;
+    color: Maroon;
+    font-weight: bold;
+}
+.tblInnerBreaks
+{
+    width:100%;
+    border-collapse:collapse;
+}
+table.tblInnerBreaks .break-odd
+{
+    background-color: #DCDCDC;
+}
+table.tblInnerBreaks .break-even
+{
+    background-color: #FFFFE0;
+}
+
+table.tblLocationList td
+{
+    padding:3px !important;
+}
+
+
+.trDaysHeader
+{
+    background-color: #DEB887;
+}
+
+
+.tdApplyToSelected
+{
+    background-color: Black;
+}
+
+.trSubTableContainer:hover
+{
+    background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

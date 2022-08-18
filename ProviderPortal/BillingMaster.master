@@ -1,0 +1,788 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BillingMaster.master.cs" Inherits="BillingManager_BillingMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/StyleSheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../StyleSheets/BillingManagerTheme.css" rel="stylesheet" />
+    <link href="~/StyleSheets/jquery-ui/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+    <link href="~/StyleSheets/jquery-ui/jquery.ui.base.css" rel="stylesheet" type="text/css" />
+    <link href="../StyleSheets/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="../StyleSheets/Common.css" rel="stylesheet" type="text/css" />
+    <link href="../StyleSheets/Print.css" media="print" rel="stylesheet" type="text/css" />
+
+    <script src='<%= ResolveUrl("~/Scripts/jquery-1.9.0.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-migrate-1.2.1.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/ajaxupload.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/bootstrap.bundle.min.js") %>'></script>
+
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.widget.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.button.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.core.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.dialog.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.position.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/jquery-ui/jquery.ui.datepicker.min.js") %>' type="text/javascript"></script>
+     <%-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>--%>
+    <script src='<%= ResolveUrl("~/Scripts/jquery.maskedinput.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/Common.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/Payments.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/Setting.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/CheckedInPatients.js") %>' type="text/javascript"></script>
+    <script src="../../Scripts/PatientPopup.js"></script>
+    <script src="../../Scripts/CheckInFormScan.js"></script>
+    <script src="../../Scripts/InsuranceCommon.js"></script>
+    <script src="../../Scripts/PatientWalkout.js"></script>
+    <script src='<%=ResolveUrl("~/Scripts/Messages/Msg_Patient.js") %>' type="text/javascript"></script>
+    <script src='<%= ResolveUrl("~/Scripts/SubscriberCommon.js") %>' type="text/javascript"></script>
+    <script src='<%=ResolveUrl("~/Scripts/tableHeadFixer.js") %>' type="text/javascript"></script>
+ <%-- <script>
+      $(function () {
+          $(document).tooltip();
+      });
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>--%>
+    <script type="text/javascript">
+        var _ResolveUrl = '<%=ResolveUrl("~")%>';
+        //added by Iftikhar Ahmed on 08222016
+        var _EMRPath = '<%=ResolveUrl("~/ProviderPortal")%>';
+
+        /***********added by shahid kazmi 2/6/2018******/
+        var _PatientId = 0;
+        var _RooTPath = '<%=ResolveUrl("~")%>';
+        var _PracticeDocumentsPath = '<%=ResolveUrl("~/PracticeDocuments")%>';
+        var _PatientPath = '<%=ResolveUrl("~/ProviderPortal/Patient")%>';
+        var _PatientDocumentPath = '<%=ResolveUrl("~/ProviderPortal/PatientDocument")%>';
+        var _PatientDocumentCallBacksPath = '<%=ResolveUrl("~/ProviderPortal/PatientDocument/CallBacks")%>';
+        var _ControlPath = '<%=ResolveUrl("~/ProviderPortal/Controls")%>';
+        /***********end shahid kazmi 2/6/2018******/
+
+        var _AgencyDocumentsPath = '<%=ResolveUrl("~/PracticeDocuments")%>';
+
+        $(document).click(function (event) {
+
+            if (!$(event.target).closest('#divContextMenuAppointments').length || !$(event.target).closest('#divGlobalAbsoluteContainer').length) {
+
+                if ($('#divContextMenuAppointments').is(":visible")) {
+                    $('#divContextMenuAppointments').hide();
+                }
+                if ($('#divGlobalAbsoluteContainer').is(":visible")) {
+                    $('#divGlobalAbsoluteContainer').hide();
+                }
+            }
+        });
+        $(document).ready(function () {
+            debugger
+
+            var User_Type = $.trim($('#User_Type').val());
+            $("#down_arrow_div").click(function () {
+
+
+                $("#drop-down-file-div").css("display", "block");
+
+            });
+
+            $(".icon-cross").click(function () {
+
+
+                $("#drop-down-file-div").css("display", "none");
+
+            });
+
+            $(".navigation_btn").click(function () {
+
+
+
+            });
+
+            $("#Navigation").click(function () {
+
+                debugger;
+                $("#drop-down-file-div-logo").css("display", "block");
+
+                $("#main").css("background-color", "gray");
+                $("#main").prop('disabled', true);
+            });
+
+            $(".icon-cross-navigation").click(function () {
+
+
+                $("#drop-down-file-div-logo").css("display", "none");
+
+            });
+            debugger;
+
+            $("#divHumburger").toggle(
+
+                function () {
+
+                    debugger;
+                    document.getElementById("mySidenav1").style.width = "300px";
+                    document.getElementById("divContainer").style.width = "100%";
+                    document.getElementById("divContainer").style.cssFloat = "right";
+
+                   // $(".demosidebar").css("width", "20%");
+                    //$(".settings_right").css("width", "78%");
+                   // $(".div_leftReportList").css("margin-left", "1px");
+                   // $(".ReportTiles").css("margin-left", "18%");
+                  //  $(".ReportTiles").css("width", "64%");
+
+                },
+                function () {
+                    debugger;
+                    document.getElementById("mySidenav1").style.width = "0";
+                    document.getElementById("divContainer").style.width = "100%";
+                    document.getElementById("divContainer").style.cssFloat = "none";
+
+                   // $(".demosidebar").css("width", "23%");
+                  //  $(".settings_right").css("width", "80%");
+                  //  $(".div_leftReportList").css("margin-left", "13px");
+                  //  $(".ReportTiles").css("margin-left", "21%");
+                  //  $(".ReportTiles").css("width", "76%");
+
+
+                });
+            var PracticeId = $("#hdnPracticeId").val();
+            if (PracticeId == "" || PracticeId == "0") {
+                $(".leftBar_Settings").hide();
+                $(".li_settings").hide();
+                $(".li_invoices").hide();
+                $(".li_ViewProfile").hide();
+                $("#divClaimCheckParent").html("");
+                $("#divClaimCheckParent").html("No record Found");
+                $(".PaymentSummary").hide();
+                $(".div_leftReportList").html("");
+                $(".div_leftReportList").hide();
+                $(".div_RightReportShow").html("No record Found");
+                $(".ReportTiles").hide();
+                $(".clsSubContent").html("No record Found");
+                $(".innerbodysection a").removeAttr('href');
+                $(".pagetitle").html("");
+                $(".PatientInvoice").html("");
+                $("#PatientContainer").html("No record Found");
+                $("#Search").html("");
+                $("#divInsuranceGrid").html("No record Found");
+                $("#_Scheduler").hide();
+                $(".hideScheduler").hide();
+                $(".li_UserProFile").show();
+                $("#divBillingManagerContent").html("No record Found");
+                $(".divClaims").hide();
+                $('#divExportTo').hide();
+                $('#OpenClaimForm').hide();
+                $(".grid-overflow-x").hide();
+                $(".Grid").html("No record Found");
+
+                $("#divClaimCheckParent").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "15px", "margin": "17px 0 6px 0px",
+                    "font-style": "italic", "font-weight": "bold"
+                });
+                $(".div_RightReportShow").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "18px", "margin": "17px 130px 6px 0px",
+                    "font-style": "italic", "font-weight": "bold"
+                });
+                //Eligibility
+                $(".clsSubContent").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "15px", "margin": "17px 0 6px 0px",
+                    "font-style": "italic", "font-weight": "bold", "background-color": "transparent"
+                });
+                $("#PatientContainer").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "18px", "margin": "17px 130px 6px 0px",
+                    "font-style": "italic", "font-weight": "bold", "background-color": "transparent", "border": "transparent"
+                })
+                $("#divInsuranceGrid").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "18px", "margin": "17px 130px 6px 0px",
+                    "font-style": "italic", "font-weight": "bold", "background-color": "transparent", "border": "transparent"
+                })
+                $("#divBillingManagerContent").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "15px", "margin": "17px 0 6px 0px",
+                    "font-style": "italic", "font-weight": "bold"
+                })
+                //applied to the Grid class
+                $(".Grid").css({
+                    "text-align": "center", "color": "red", "color": "red", "font-size": "15px", "margin": "17px 0 6px 0px",
+                    "font-style": "italic", "font-weight": "bold", "border": "none"
+                })
+            }
+
+        });
+
+
+        function retunHomePage() {
+            debugger;
+            window.location.href = "../../ProviderPortal/Home.aspx";
+
+        }
+
+
+        function SideNavigation(link) {
+            debugger
+            if (link == "home") {
+                window.location.href = "../../ProviderPortal/Home.aspx";
+            }
+            if (link == "frontDesk") {
+                window.location.href = "../../ProviderPortal/FrontDesk.aspx";
+            }
+            if (link == "patient") {
+                window.location.href = "../../ProviderPortal/Patient/PatientSearch.aspx";
+            }
+            if (link == "scheduler") {
+                window.location.href = "../../ProviderPortal/Scheduler/Scheduler.aspx";
+            }
+            if (link == "dashboard") {
+                window.location.href = "../../ProviderPortal/Dashboard.aspx";
+            }
+            /* Added by Faiza Bilal 8/6/2021*/
+            if (link == "dashboardRPM") {
+                window.location.href = "../../ProviderPortal/DashboardRPM.aspx";
+            }
+            if (link == "reports") {
+                // window.location.href = "../../ProviderPortal/Reports/Report.aspx";
+                window.location.href = "../../ProviderPortal/ReportsNew/ReportsMasterPage.aspx";
+
+            }
+            if (link == "claims") {
+                window.location.href = "../../ProviderPortal/Claims/BillingManager.aspx";
+            }
+            if (link == "payers") {
+                window.location.href = "../../ProviderPortal/Insurances/InsurancesList.aspx";
+            }
+            if (link == "Payments") {
+                window.location.href = "../../ProviderPortal/Payment/Payments.aspx";
+            }
+            if (link == "message") {
+                window.location.href = "../../ProviderPortal/Messages/Messages.aspx";
+            }
+            if (link == "settings") {
+                window.location.href = "../../ProviderPortal/Settings/Settings.aspx";
+            }
+        }
+
+        function OpenClaimStatus206() {
+            window.location.href = "../../ProviderPortal/Claims/BillingManager.aspx?status=206";
+        }
+
+
+    </script>
+    
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #d0d4d7;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top:5px;
+            margin-left: -2%;
+        }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 14px;
+                color: black;
+                display: block;
+                transition: 0.3s;
+            }
+
+                .sidenav a:hover {
+                    /*color: #f1f1f1;*/
+                }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                /*right: 25px;*/
+                font-size: 18px;
+                margin-left: 22px;
+                text-align: left;
+            }
+
+        .clsNaveSpan {
+            margin-top: -3%;
+        }
+
+        .clshref {
+            width: 65%;
+        }
+
+        .logo {
+            margin-top: 12px !important;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 14px;
+                }
+        }
+
+
+
+        .humdurger {
+            display: inline-block !important;
+            cursor: pointer;
+            margin-top: 11px;
+        }
+
+        .bar1, .bar2, .bar3 {
+            width: 16px;
+            height: 1.7px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            /*-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);*/
+        }
+
+        .change .bar2 {
+            /*opacity: 0;*/
+        }
+
+        .change .bar3 {
+            /*-webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-6px, -4px);*/
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+
+        <asp:Literal runat="server" ID="ltrScript"></asp:Literal>
+        <asp:Literal runat="server" ID="ltrStatesUTC"></asp:Literal>
+        <div id="divWrapper">
+            <div style="width: 100%; float: left; position: fixed; z-index: 999;" id="header">
+                <header>
+
+                    <div class="log" style="width: 50%; float: left;">
+
+                        <div id="logoimage" style="margin-left: 2%; margin-top: 3px;">
+                            <span class="logo" onclick="retunHomePage();" style="cursor: pointer;"></span>
+                            <%--  <a class="logo" href="<%= ResolveUrl("~/ProviderPortal/Home.aspx") %>" style="float:left"></a>--%>
+
+                            <%--  <div id="down_arrow_div_logo">
+                        <span class="down_arrow_logo"></span>
+                    </div>--%>
+                            <div class="humdurger" id="divHumburger" onclick="myFunction(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                        <%-- Rizwan kharal Start --%>
+
+                        <div id="VerifiedMessage">
+                            <div class="divMesgVreified" style="display: none">
+                                <div style="text-align: center; margin-top: 10px; color: crimson; font-size: 15px">Are you receivied the check or not ? </div>
+                                <div style="cursor: pointer; background-color: white">
+                                    <img src="../../Images/Green-checkmark[1].png" style="width: 25px; float: right; margin-top: -5px; margin-right: 45px;" onclick="VerifyUpdateTrue(0,true);" />
+                                </div>
+                                <div style="cursor: pointer">
+                                    <img src="../../Images/Cross.png" style="float: right; margin-right: 10px; margin-top: 2px;" onclick="VerifyUpdatefalse(0,true);" />
+                                </div>
+                            </div>
+                        </div>
+                        <%-- Rizwan kharal End --%>
+                    </div>
+
+
+                    <div class="profile" style="float: right;">
+
+                        <div class="statuscount206" style="float: left; position:relative; text-align: right; cursor: pointer;" onclick="OpenClaimStatus206()">
+                            <div class="notification-status">
+                                <div class="notification-count">
+                                    <asp:Label runat="server" ID="lblstatus206"></asp:Label>
+                                </div>
+                               
+                                    <span>
+                                        <img src="../../Images/bellicon.png" style="width: 15px; height: 15px" />
+                                    </span>
+                               
+                            </div>
+
+                        </div>
+
+
+                        <div class="picture">
+                            <asp:Image runat="server" ID="imgProfielPicture" ImageUrl="~/Images/maleIcon.png" />
+                        </div>
+                        <div class="detail">
+                            <h1>
+                                <asp:Label ID="lblUsername" runat="server"></asp:Label></h1>
+                            <%--<a href="#" class="viewprofile"></a>--%>
+                        </div>
+
+                        <div id="down_arrow_div">
+                            <span class="down_arrow"></span>
+                        </div>
+                        <div id="drop-down-file-div" style="display: none;">
+                            <ul class="drop-down-file">
+
+
+                                <li id="logout-li" class="User_menu"><a href="javascript: window.location = _EMRPath + '/Logout.ashx'" class="link"><span>Logout</span> </a><span class="icon-cross"></span></li>
+
+                                <li id="View-li" class="User_menu li_invoices"><span><a href="../../ProviderPortal/Claims/InvoiceGenerated.aspx" class="link">My Invoices </a></span></li>
+
+                                <hr class="hr_line" />
+
+                                <li id="View-li" class="User_menu li_ViewProfile"><span><a href="../../Providerportal/UserProfile.aspx" class="link">View Profile </a></span></li>
+
+                                <hr class="hr_line" />
+
+
+                                <li id="View-li" class="User_menu li_settings"><span><a href="../../Providerportal/Settings/Settings.aspx" class="link">Settings </a></span></li>
+                                <%--<li id="View-li" class="User_menu li_settings"> <span><a href="../Providerportal/Settings/Settings.aspx" class="link"> Settings </a> </span></li>--%>
+                                <hr class="hr_line" />
+                                <li id="View-li" class="User_menu li_UserProFile" style="display: none;"><span><a href="../../../Providerportal/Register/UserDetail.aspx" class="link">View Profile</a> </span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+                </header>
+
+                <%-- div message --%>
+                <div id="message" style="background-color: none; border: none">
+
+                    <div class="divMesg warning" style="float: right; margin-right: 46%; margin-top: -40px !important; z-index: 99999999 !important; border-radius: 5px; display: none;"></div>
+                </div>
+
+
+                <%--added by shahid kazmi 1/25/2018--%>
+                <div id="mySidenav1" class="sidenav" style="margin-top:58px; display: none">
+                    <div class="close-btn">
+                    <a href="javascript:void(0)" class="clshref" onclick="closeNav(this)" style="display:block;width:100%; text-align:left;padding-left:50px;">❮ Navigation</a>
+                    <hr style="" />
+                    </div>
+                    <a href="../../../ProviderPortal/Home.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_home"></span>Home</a>
+                    <a href="../../../ProviderPortal/Patient/PatientSearch.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_patient"></span>Patient</a>
+                    <a href="../../../ProviderPortal/Eligibility/Eligibility.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_Eligibility"></span>Eligibility</a>
+                    <a href="../../../ProviderPortal/Scheduler/Scheduler.aspx" class="clshref hideScheduler"><span class="clsNaveSpan nav_logo nav_scheduler"></span>Scheduler</a>
+                    <a href="../../../ProviderPortal/Dashboard.aspx" class="clshref leftBar_Dashboard"><span class="clsNaveSpan nav_logo nav_dashboard"></span>Dashboard</a>
+                    <%--  Added by Faiza Bilal 8/6/2021--%>
+                     <a href="../../../ProviderPortal/DashboardRPM.aspx" class="clshref leftBar_Dashboard" style="display:none" id="_dashboardRPMSidebar"><span class="clsNaveSpan nav_logo nav_dashboard"></span>RPM</a>
+                    <asp:HiddenField runat="server" ID ="RPMDashBoardSideBar"/>
+                    <asp:HiddenField runat="server" ID ="hdnRPMPractices"/>
+                    
+                    <%-- <a href="../../ProviderPortal/Reports/Report.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_Reports"></span>Reports</a>--%>
+                    <a href="../../../ProviderPortal/ReportsNew/ReportsMasterPage.aspx" class="clshref leftBar_Reports"><span class="clsNaveSpan nav_logo nav_Reports"></span>Reports</a>
+                    <a href="../../../ProviderPortal/Claims/BillingManager.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_Claims"></span>Claims</a>
+                    <a href="../../../ProviderPortal/Insurances/InsurancesList.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_Payer"></span>Payer</a>
+                    <a href="../../../ProviderPortal/Payment/Payments.aspx" class="clshref leftBar_Payments"><span class="clsNaveSpan nav_logo nav_payments"></span>Payments</a>
+                    <a href="../../../ProviderPortal/Messages/Messages.aspx" class="clshref"><span class="clsNaveSpan nav_logo nav_Messages"></span>Messages</a>
+                    <a href="../../../ProviderPortal/Settings/Settings.aspx" class="clshref leftBar_Settings"><span class="clsNaveSpan nav_logo nav_Settings"></span>Settings</a>
+                </div>
+
+
+
+                <script>
+                    function myFunction(x) {
+                        debugger;
+                        $("#mySidenav1").css("display", "block");
+                        var PracticeId = $("[id$='RPMDashBoardSideBar']").val();
+                        var RPMPracticeIds = $("[id$='hdnRPMPractices']").val();
+                        var ar = RPMPracticeIds.split(',');
+                        for (var i = 0; i < ar.length; i++) {
+                            if (PracticeId == ar[i]) {
+                                debugger;
+                                $("#_dashboardRPMSidebar").show();
+                            }
+                            //Added by Khayyam Adeel to hide dashboardRPM for 1026
+
+                        }
+                        x.classList.toggle("change");
+
+
+
+                    }
+                    function openNav() {
+
+                        document.getElementById("mySidenav1").style.width = "300px";
+
+                        document.getElementById("divContainer").style.width = "100%";
+                        document.getElementById("divContainer").style.cssFloat = "right";
+
+                    }
+
+                    function closeNav(y) {
+                        debugger;
+                        document.getElementById("mySidenav1").style.width = "0";
+                        document.getElementById("divContainer").style.width = "100%";
+                        document.getElementById("divContainer").style.cssFloat = "none";
+                        $(".div-reports-content").css("width", "20% !important");
+                        /*$(".bar1").css("-webkit-transform", "none");
+                        $(".bar1").css("transform", "none");
+                        $(".bar2").css("opacity", "1");
+                        $(".bar3").css("-webkit-transform", "none");
+                        $(".bar3").css("transform", "none");*/
+
+
+                    }
+                </script>
+                <%-- end shahid kazmi 1/25/2018--%>
+            </div>
+
+
+
+
+
+            <div id="divContainer">
+
+                <nav class="navbar navbar-expand-lg navigationpanel" style="margin-top: 60px; /*position: fixed; this style effect the setting*/ 
+z-index: 99">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mt-1 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Home.aspx") %>">
+                                    <div class="button HomeTab" id="_home">
+                                        <span class="home btn_icon"></span><span class="btn_name">Home</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item" >
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/DashboardRPM.aspx") %>">
+                                    <div class="button"  id="_dashboardRPM" runat="server">
+                                        <span class="dashboard btn_icon"></span><span class="btn_name">RPM</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/FrontDesk.aspx") %>">
+                                    <div style="display: none" class="button" id="_FrontDesk">
+                                        <span class="home btn_icon"></span><span class="btn_name">Home</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Patient/PatientSearch.aspx") %>">
+                                    <div class="button" style="" id="Patients">
+                                        <span class="patientsTab btn_icon"></span><span class="btn_name">Patients</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Claims/BillingManager.aspx") %>">
+                                    <div class="button" id="_claims" style="">
+                                        <span class="claims btn_icon" style="margin-right: 0px !important"></span><span class="btn_name">Claims</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Eligibility/Eligibility.aspx") %>">
+                                    <div class="button" style="" id="_Eligibility">
+                                        <span class="Eligibility btn_icon" style="margin-top: 1px !important"></span><span class="btn_name">Eligibility</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Scheduler/Scheduler.aspx") %>">
+                                    <div class="button " id="_Scheduler" style="">
+                                        <span class="Scheduler btn_icon"></span><span class="btn_name">Scheduler</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Dashboard.aspx") %>">
+                                    <div class="button" id="_dashboard" style="">
+                                        <span class="dashboard btn_icon"></span><span class="btn_name">Dashboard</span>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/ReportsNew/ReportsMasterPage.aspx") %>">
+                                    <div class="button" id="_reports" style="">
+                                        <span class="reports btn_icon"></span><span class="btn_name">Reports</span>
+                                        <%-- <a href="<%= ResolveUrl("~/ProviderPortal/Reports/Report.aspx") %>"><span class="reports btn_icon"></span> <span class="btn_name">Reports</span></a>--%>
+                                    </div>
+                                        </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="<%= ResolveUrl("~/ProviderPortal/Payment/Payments.aspx") %>">
+                                    <div class="button" style="" id="_payments">
+                                        <span class="payments btn_icon"></span><span class="btn_name">Payments</span>
+                                    </div>
+                                        </a>
+                                    <%--<div class="button" style="" id="_CustomerSupport">
+                        <a href="<%= ResolveUrl("~/ProviderPortal/CustomerSupport/Support.aspx") %>"><span class="Support btn_icon"></span> <span class="btn_name">Customer Support</span></a>
+                    </div>--%>
+                                    <%-- <div class="button" style="" id="_messages">
+                        <a href="<%= ResolveUrl("~/ProviderPortal/Messages/Messages.aspx") %>"><span class="messages btn_icon" style="margin-top:4px !important"></span><span class="btn_name">Messages</span></a>
+                    </div>--%>
+                                    <%--<div class="button" style=" " id="_settings">
+                        <a href="<%= ResolveUrl("~/ProviderPortal/Settings/Settings.aspx") %>"><span class="settings btn_icon" style="margin-top:3px;margin-right:0px"></span><span class="btn_name">Settings</span></a>
+                    </div>--%>
+                                    <%--<div class="button">
+                        <span class="settings"></span>Settings
+                    </div>--%>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+
+                <div>
+
+                    <%--  Added by Faiza Bilal 8/6/2021--%>
+                </div>
+                <div class="container">
+
+                    <div id="divRightsSettings" runat="server" style="display: none"></div>
+                    <div id="ContentMaindiv">
+             
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+                    <div class="clearboth"></div>
+
+
+
+
+
+
+                    <%-- <div id="side_nav_div">
+                 <div id="mySidenav" class="sidenav">
+                <a href="#" id="Navigation">Navigation Bar</a>
+              </div>
+            </div>--%>
+
+
+                     <%--<div id="drop-down-file-div-logo"style="display:none;">
+                         <ul class="drop-down-file-logo">
+
+                         <li id="" class="icon_li_cross">  <span class="icon-cross-navigation"></span> </li>
+                             
+                          <li id="" style="margin-top: 25px" class="home li_setting" onclick="SideNavigation('home')">
+                              <span class="nav_logo nav_home"></span>
+                              <span class="nav_label">Home</span>
+                          </li>
+                         <li id="" class="patient li_setting" onclick="SideNavigation('patient')">
+                             <span class="nav_logo nav_patient"></span>
+                              <span class="nav_label ">Patient</span>
+
+                         </li>
+                          <li id="" class="scheduler li_setting" onclick="SideNavigation('scheduler')">
+
+                              <span class="nav_logo nav_scheduler"></span>
+                              <span class="nav_label ">Scheduler</span>
+
+                          </li>
+                            <li id="" class="dashboard li_setting" onclick="SideNavigation('dashboard')">
+                                 <span class="nav_logo nav_dashboard"></span>
+                              <span class="nav_label ">Dashboard</span> 
+
+                            </li>  
+                             <li id="" class="Reports li_setting" onclick="SideNavigation('reports')">
+                                  <span class="nav_logo nav_Reports" ></span>
+                              <span class="nav_label ">Reports</span> 
+                             </li>
+                              <li id="" class="Claims li_setting" onclick="SideNavigation('claims')">
+                                  <span class="nav_logo nav_Claims"></span>
+                              <span class="nav_label ">Claims</span> 
+                              </li>
+                              <li id="" class="Payer li_setting" onclick="SideNavigation('payers')">
+                              <span class="nav_logo nav_Payer"></span>
+                              <span class="nav_label ">Payer</span> 
+                              </li>
+                              <li id="" class="payments li_setting" onclick="SideNavigation('Payments')">
+                                  <span class="nav_logo nav_payments"></span>
+                              <span class="nav_label ">Payments</span> 
+                              </li>
+                              <li id="" class="Messages li_setting" onclick="SideNavigation('message')">
+                              <span class="nav_logo nav_Messages"></span>
+                              <span class="nav_label ">Messages</span> 
+                              </li>
+                              <li id="" class="settings li_setting" onclick="SideNavigation('settings')">
+                                   <span class="nav_logo nav_Settings"></span>
+                              <span class="nav_label ">Settings</span> 
+                              </li>
+                        
+                          </ul>
+                        </div>--%>
+                    <div style="clear:both;"></div>
+                    <div id="footer">
+                    <footer>
+                        &copy; Maxremind 2015-<%= DateTime.Now.Year.ToString() %>, All rights reserved
+                    </footer>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div id="divLoading" style="z-index: 99999999;">
+            <img src='<%= ResolveUrl("~/Images/spinner.gif") %>'>
+        </div>
+        <div class="contentWrapper" id="contentWrapper">
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div id="divOpacity"></div>
+        </div>
+        <div id="divERAClaimsPrint"></div>
+        <div id="dialogCheckNumber" style="display: none;"></div>
+        <div id="dialogShowMessage" style="display: none;"></div>
+        <div id="divDialogConfirmationMaster" title="Confirmation!" style="display: none;"></div>
+        <div id="InsuranceSearchBox" style="display: none;"></div>
+        <div id="divGlobalAbsoluteContainer" class="absolute-global" style="display: none;"></div>
+        <div id="EligibilityResponse" style="display: none;"></div>
+        <div id="divEligibilityDetail" style="width: 27%; float: right;" runat="server" visible="false"></div>
+        <div id="divDialogCheckInForm" style="display: none;"></div>
+
+        <div id="divDialogPatientInsurance" style="display: none;"></div>
+
+
+        <div class="ui-widget-overlay ui-front" style="display: none;" id="divOverlay"></div>
+        <div id="SubscriberSearch" style="display: none;"></div>
+        <div id="divSubscriberAdd" style="display: none;"></div>
+        <%--added by shahid kazmi 2/12/2018--%>
+        <div id="divMainDialogWrapper" style="display: none;"></div>
+        <%--end shahid kazmi 2/12/2018--%>
+        <asp:HiddenField ID="hdnoldpassword" runat="server" />
+        <asp:HiddenField ID="userType" runat="server" />
+        <asp:HiddenField ID="User_Type" runat="server" />
+        <asp:HiddenField ID="hdnAllowPayments" runat="server" />
+        <asp:HiddenField ID="hdnPracticeId" runat="server" />
+
+    </form>
+</body>
+</html>
+
+
+

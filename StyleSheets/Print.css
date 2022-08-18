@@ -1,0 +1,263 @@
+﻿@media print {
+
+    .print-buttons-wrapper {
+        text-align: right;
+        margin: 0 0 10px;
+        float: left;
+        width: 98%;
+        padding: 0 2% 0 0;
+    }
+
+    .print-preview-wrapper {
+        background: #E6F1FA;
+        padding: 10px 0;
+        float: left;
+        width: 100%;
+    }
+
+    .print-page-left-pc {
+        float: left;
+        width: 25%;
+    }
+
+    .print-page-left-ipad {
+        float: left;
+        width: 0%;
+    }
+
+    .print-page-right-pc {
+        float: right;
+        width: 75%;
+    }
+
+    .print-page-right-ipad {
+        float: right;
+        width: 100%;
+    }
+
+
+    .print-page {
+        float: left;
+        width: 674px;
+        padding: 50px 100px;
+        background: #FFF;
+        margin: 0 auto;
+        box-shadow: 2px 1px 7px 0px #808080;
+        -webkit-box-shadow: 2px 1px 7px 0px #808080;
+        -moz-box-shadow: 2px 1px 7px 0px #808080;
+        -o-box-shadow: 2px 1px 7px 0px #808080;
+    }
+}
+
+@media print {
+    .print-page {
+        box-shadow: 0 0 0 0;
+        -webkit-box-shadow: 0 0 0 0;
+        -moz-box-shadow: 0 0 0 0;
+        -o-box-shadow: 0 0 0 0;
+    }
+}
+@media print {
+    .print-headings-1 {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Calibri !important;
+        margin: 0 0 5px;
+    }
+
+    .print-headings-2 {
+        margin: 0 0 2px 20px;
+    }
+
+    .blue-underline {
+        color: Blue;
+        text-decoration: underline;
+        cursor: default;
+    }
+
+    .print-label-normal {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: Calibri !important;
+    }
+
+    .print-label-bold {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: Calibri !important;
+    }
+
+    .print-label-single {
+        font-family: Consolas !important;
+        font-size: 100%;
+    }
+
+    .table-line-height-normal {
+    }
+
+        .table-line-height-normal tr {
+            line-height: 18px;
+        }
+
+    /********UL 1st Level***/
+    .ul-bullets {
+        list-style: square outside none !important;
+        padding: 0 0 0 20px;
+        margin: 0 0 0 30px;
+    }
+
+        .ul-bullets li {
+            font-family: Consolas !important;
+        }
+
+    .li-default-hide li {
+        display: none;
+    }
+    /********UL 2nd Level***/
+    .ul-hyphen {
+        list-style: none outside none !important;
+        padding: 0 0 0 5px;
+        margin: 0 0 0 8px;
+    }
+
+        .ul-hyphen > li:before {
+            content: "─";
+        }
+
+        .ul-hyphen li {
+            font-family: Consolas !important;
+        }
+
+    /********UL 3rd /4th Level***/
+    .ul-circle {
+        list-style: circle outside none !important;
+        padding: 0 0 0 5px;
+        margin: 0 0 0 25px;
+    }
+
+        .ul-circle li {
+            font-family: Consolas !important;
+        }
+    /********Div 3rd Level***/
+    .li-sub-div {
+        margin-left: 25px;
+    }
+
+    .M-series-sub-div {
+        margin: 0 0 10px 30px;
+    }
+
+    .margin-left-big {
+        margin-left: 30px;
+    }
+
+    /*Start Header*/
+    .print-page-header {
+        border-bottom: 1px solid #808080;
+        padding: 0 0 15px;
+        float: left;
+        width: 100%;
+    }
+
+    .print-page-header-left {
+        float: left;
+    }
+
+    .print-page-header-right {
+        float: right;
+    }
+    /*End Header*/
+
+    /*Start Contents*/
+    .print-page-contents {
+        float: left;
+        width: 100%;
+    }
+
+        .print-page-contents > div {
+            float: left;
+            width: 100%;
+            padding: 10px 0 0;
+        }
+
+    .print-page-contents-patient {
+    }
+
+    .print-page-contents-patient-left {
+        float: left;
+    }
+
+    .print-page-contents-patient-right {
+        float: right;
+    }
+    /*End Contents*/
+
+    .print-page-footer {
+        border-top: 1px solid #808080;
+        padding: 15px 0 0;
+        float: left;
+        width: 100%;
+        margin: 20px 0 0;
+    }
+
+    .print-page-footer-left {
+        float: left;
+    }
+
+    .print-page-footer-right {
+        float: right;
+    }
+}
+
+@media print{
+
+    table {
+    font-size: 8pt !important;
+    border-collapse: collapse !important;
+    border: none !important;
+}
+
+th {
+    font-size: 8pt !important;
+}
+
+td {
+    font-size: 8pt !important;
+    border: none !important;
+}
+
+.div_leftReportList, .navbar {
+    display: none !important;
+}
+
+.div_RightReportShow {
+    width: 100% !important;
+}
+
+#header {
+    display: none !important;
+}
+
+body {
+    font-size: 8pt !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.InitialMsg span {
+    font-size: 8pt !important;
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+        body {
+            transform: scale(.8) !important;
+        }
+
+    table {
+        page-break-inside: avoid !important;
+        font-size: 8pt !important;
+    }
+
+}

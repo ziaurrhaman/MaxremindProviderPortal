@@ -1,0 +1,93 @@
+﻿
+.Grid tr:hover
+{
+    background-color: transparent !important;
+}
+
+#ros-wrapper
+{
+}
+
+#ros-header
+{
+    margin: 0 0 25px;
+    width: 100%;
+}
+#ros-header h3
+{
+    margin: 0;
+    float:left;
+}
+.ros-buttons-wrapper
+{
+    float:right;
+}
+
+.ros-delete-icon
+{
+    cursor:pointer;
+    margin: 1px 0 0;
+    width: 15px;
+}
+
+.ros-table-setup
+{
+    margin:10px 0 0;
+}
+
+.ros-tbl-templates
+{
+    width: 100%;
+}
+.ros-setup-first-td
+{
+    background-color: #FFF5EE;
+    cursor: pointer;
+    width: 80%;
+}
+.ros-setup-first-td:hover
+{
+    background-color: #D0E6FB;
+}
+.ros-setup-action-td
+{
+    background-color: #F0F0F0;
+}
+.ros-selected-item
+{
+    background-color: #D0E6FB;
+}
+
+
+
+
+/*Theme Icons*/
+.them-icon
+{
+    background: url("../../Images/iconSprite.png") repeat-x scroll 50% 50%;
+}
+.add-icon
+{
+    background-position: 40px 0;
+    height: 27px;
+    position: absolute;
+    right: 53px;
+    top: -7px;
+    width: 28px;
+}
+.delete-icon
+{
+    background-position: 78px -390px;
+    cursor:pointer;
+    float: left;
+    height: 27px;
+    width: 28px;
+}
+.save-icon
+{
+    background-position: 79px -74px;
+    cursor: pointer;
+    float: left;
+    height: 32px;
+    width: 33px;
+}

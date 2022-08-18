@@ -1,0 +1,52 @@
+<table border='1'><tr><th>Row N0</th><th style='width:0.1px;'></th><th>Claim No</th><th>Account No</th><th>Patient Name</th><th>DOS</th><th>Bill Date</th><th>Location</th><th>Primary Insurance</th><th>Status</th><th>Paid Amount</th><th>Balance Due</th><th style='width:0.1px;'></th></tr>
+                                                <tr  >
+                                                    <td>
+                                                        <i>1</i>
+                                                    </td>
+                                                    <td id="ContentPlaceHolder1_rptClaims_tdchk_0" class="singleCheckbox" style="display:none;"></td>
+
+                                                    <td>
+                                                        <span >104184</span>
+                                                        <input type="hidden" class="hdnClaimId" value='104184' />
+                                                        <input type="hidden" class="hdnPatientId" value='3691' />
+                                                        <input type="hidden" class="hdnServiceDate" value='10/15/2019' />
+                                                        <input type="hidden" class="hdnSubmissionStatusId" value='111' />
+                                                    </td>
+                                                    <td  style="cursor: pointer;">
+                                                        3691
+                                                    </td>
+                                                    <td  style="cursor: pointer;">
+                                                        TRUITT, RHONDA
+                                                    </td>
+                                                    <td style="text-align: center; cursor: pointer;" >
+                                                        10/15/2019
+                                                    </td>
+                                                    <td style="text-align: center;"  style="cursor: pointer;">
+                                                        10/24/2019
+                                                    </td>
+                                                    <td style="text-align: center;"  style="cursor: pointer;">
+                                                        Medical Center of McKinney
+                                                    </td>
+                                                    <td  style="cursor: pointer;">
+                                                        <span id="ContentPlaceHolder1_rptClaims_lblInsuranceName_0">CIGNA</span>
+                                                    </td>
+                                                    <td style="white-space: nowrap; cursor: pointer;" >
+                                                       
+                                                        <span id="ContentPlaceHolder1_rptClaims_lblstatus_0">Accepted For Processing</span>
+                                                    </td>
+                                                    
+                                                    <td style="white-space: nowrap; cursor: pointer;" >
+                                                        $0.00
+                                                    </td>
+                                                    <td style="white-space: nowrap; cursor: pointer;" >
+                                                        $111.31
+                                                    </td>
+                                                    
+
+
+                                                  
+                                                    <td id="ContentPlaceHolder1_rptClaims_tdPrint_0" align="center" class="clsPrint" style="display:none;"></td>
+
+                                                    
+                                                </tr>
+                                            </table>

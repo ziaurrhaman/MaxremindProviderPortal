@@ -1,0 +1,208 @@
+﻿body 
+{
+    /*font-size:75%;*/
+}
+
+.InputStyle
+{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    border: 1px inset lightBlue;
+    font-size: 13px !important;
+    padding: 8px;
+    width: 220px;
+}
+
+.InputStyleSmall
+{
+     -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    border: 1px inset lightBlue;
+    padding: 4px;
+    width: 50px;
+}
+.Information
+{
+    width:300px;
+    float:left;
+    padding:10px;
+}
+.Information div
+{
+  float:left;
+  width:350px;
+  height: 45px;
+}
+.label
+{
+    width: 110px;
+    float: left;
+    margin-top: 8px;
+    font-size: 13px;
+}
+.txt
+{
+width: 210px;
+float: left;
+    
+}
+#tabs
+{
+    width:750px;
+    overflow:hidden;
+    margin:0 auto;
+    margin-top:20px;
+    padding-bottom:10px;
+}
+.ImageDiv
+{
+    border: 1px solid gray;
+    float: right;
+    height: 250px;
+    margin-right: 15px;
+    margin-top: 9px;
+    width: 240px;
+}
+
+#LowerDiv
+{
+  float:left;
+  width:100%;
+  margin-top:10px;
+
+}
+
+
+#LowerDiv div
+{
+  float:left;
+  width:362px;
+  height: 45px;
+}
+#VisitLowerDiv
+{
+ float: right;
+width: 50%;
+margin-top: 10px;
+
+}
+
+
+#VisitLowerDiv div
+{
+ float: left;
+width: 115px;
+height: 91px
+}
+
+.HeadingDiv
+{
+    width: 725px;
+    border-bottom: 1px dashed gray;
+    float: left;
+    margin: 23px 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: gray;
+    height:25px;
+}
+
+.btnDiv
+{
+    width: 140px;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.btnSubmit
+{
+    width:100px;
+    height:25px;
+}
+#photoControl
+{
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+    width: 702px;
+}
+#AllVisits
+{
+   width: 175px;
+padding: 5px;
+float: left;
+border: 1px solid;
+margin-top: 45px;
+border-radius: 10px;
+height: 600px;
+border: none;
+border-right: 1px solid lightBlue;
+box-shadow: inset -7px -11px 17px rgba(0, 0, 0, 0.2);
+    
+}
+#AllVisits #heading
+{
+  font-size: 11pt;
+text-align: center;
+color: #1975EB;
+}
+#AllVisits #VisitDate
+{
+    text-align:center;
+}
+#AllVisits #VisitDate a
+{
+    text-align:center;
+     text-decoration:none;
+     color:#13C713;
+}
+#AllVisits #VisitDate a:hover
+{
+    text-align:center;
+     text-decoration:underline;
+     color:#13C713;
+}
+.smallLabel
+{
+
+width: 90px;
+float: left;
+margin-top: 16px;
+}
+.vitalHeading
+{
+    width: 511px;
+border-bottom: 1px dashed gray;
+float: right;
+margin-top: 23px;
+font-weight: bold;
+color: gray;
+height: 25px;
+}
+.visitBtnDiv
+{
+width: 144px;
+margin-left: 450px;
+margin-bottom: 32px;
+}
+.editBtnDiv
+{
+    float:right;
+    width:150px;
+}
+
+.cancelBtnDiv
+{
+    float:right;
+    width:150px;
+}
+#DemographicsControl
+{
+    float:left;
+    border:1px solid;
+    width:800px;
+    height:20px;
+}

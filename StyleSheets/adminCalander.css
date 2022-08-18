@@ -1,0 +1,355 @@
+﻿body {
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin:0 0 2em;
+    padding: 0.5em;
+    font-size: 1.3em;
+}
+
+p.description {
+    font-size: 0.8em;
+    padding: 1em;
+    position: absolute;
+    top: 1.2em;
+    margin-right: 400px;
+}
+
+#calendar_selection {
+    font-size: 12px;
+}
+
+#message {
+    font-size: 0.7em;
+    position: absolute;
+    top: 1em;
+    right: 320px;
+    padding: 1em;
+    /*background: #ddf;
+    border: 1px solid #aad;
+    width: 270px;*/
+}
+
+.deleteEventIcon
+{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.event-date-time
+{
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.patiant-name
+{
+    margin: 0 auto;
+    font-size: 11px;
+    /*text-align: center;
+    width: 300px;*/
+}
+
+#divAppointmentContainer {
+	display: none;
+	font-size: 12px;
+}
+
+#divAppointmentContainer ul li {
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+#divAppointmentContainer input[type='text'], #divAppointmentContainer textarea {
+	font-size: 12px;
+}
+#divAppointmentContainer textarea
+{
+    width: 100%;
+}
+
+
+#iconsDiv
+{
+    float: right;
+    margin: 0 5px 0 0;
+}
+
+
+/*Start Appointment Dialog*/
+#divAppointmentContainer span.pt-add
+{
+    background-color: #F3E799;
+    border: 1px solid #E2C678;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+    margin: 8px 2px 0 !important;
+}
+
+#divAppointmentContainer span.pt-search
+{
+}
+
+.appointment-upper
+{
+}
+.appointment-lower
+{
+}
+.appointment-repeat
+{
+}
+.appointment-repeat table td
+{
+    text-align: center;
+    width: 14%;
+}
+.patient-info-wrapper
+{
+    float: left;
+    height: 94px;
+}
+.patient-photo-wrapper
+{
+    float: left;
+    width: 85px;
+    height: 80px;
+}
+.patient-photo-wrapper img
+{
+    width: 100%;
+    height: 100%;
+}
+.patient-information
+{
+    float: left;
+    width: 236px;
+    margin: 2px 0 0 5px;
+}
+.patient-information .gray
+{
+    color: Gray;
+}
+.patiant-add-wrapper
+{
+    height: 604px;
+    width: 725px;
+}
+/*End Appointment Dialog*/
+
+
+
+.warning {
+    background: url("../images/warning.png") no-repeat scroll 10px center #FFD1D1;
+    border: 1px solid #F8ACAC;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #555555;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 33px;
+}
+
+.closeICON
+{
+    cursor: pointer;
+    float:right;
+}
+.closeICON:hover
+{
+    background-color: white;
+}
+.emptyInput
+{
+    background-color: Red;
+}
+
+
+.SelectionContainer
+{
+    height:140px;
+}
+
+
+
+.status-wrapper
+{
+    float: left;
+    width: 100%;
+    height: 15px;
+    position: relative;
+    font-size: 100%;
+}
+.status-label
+{
+    float: left;
+    font-size: 9px;
+    margin: 1px 0 0 1px;
+}
+.custom-dropdown-list
+{
+    font-size: 9px;
+    position: absolute;
+    background-color: black;
+    text-align: left;
+    padding: 5px;
+    display: none;
+    z-index: 9999;
+}
+.custom-dropdown-list-top-to-bottom
+{
+    top: 15px;
+}
+.custom-dropdown-list-bottom-to-top
+{
+    bottom: 15px;
+}
+.patint-info-list
+{
+    width: 232px;
+    background: #fff !important;
+    color: #000;
+    font-size: 10px;
+}
+.patint-info-list table span
+{
+}
+.custom-dropdown-list tr:hover
+{
+    background-color: White;
+    color: Black;
+}
+.wc-cal-event
+{
+    overflow: visible !important;
+    opacity: 1;
+}
+.wc-container .ui-resizable-s
+{
+    position: absolute;
+    left: 50%;
+}
+
+.appointment-top-icon
+{
+    float:right;
+    background-repeat: no-repeat;
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+}
+.appointment-bottom-icon
+{
+    float:left;
+    background-repeat: no-repeat;
+    margin: 0 3px;
+    width: 14px;
+    height: 14px;
+}
+
+.patient-info-icon-wrapper
+{
+    position: absolute;
+    right: 15px;
+    top: 1px;
+    cursor: pointer;
+}
+.patient-info-icon
+{
+    background: url(../Images/Calander/PatientInformation.png);
+}
+
+
+.status-dropdown-icon-close
+{
+    background: url(../Images/Calander/InfoClosed.png);
+}
+.status-dropdown-icon-open
+{
+    background: url(../Images/Calander/InfoOpen.png);
+}
+
+.copy-appointment-checkbox
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.datepickerContainer .ui-datepicker
+{
+    width: 97% !important;
+}
+
+.calendar-selection-inner
+{
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+.calendar-selection-inner h3
+{
+    margin: 5px 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+.calendar-selection-inner select
+{
+    border: 1px inset lightblue;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 13px !important;
+    margin: 0;
+    padding: 3px;
+    width: 99.5%;
+}
+
+.font-small
+{
+    font-size: 11px;
+}
+.spnPatientEligibility
+{
+    float: left;
+}
+.eligibility-icon-check
+{
+    background: url(../Images/Eligibility/EligibilityCheck.png);
+}
+.eligibility-icon-active
+{
+    background: url(../Images/Eligibility/EligibilityActive.png);
+}
+.eligibility-icon-inactive
+{
+    background: url(../Images/Eligibility/EligibilityInactive.png);
+}
+.eligibility-icon-rejected
+{
+    background: url(../Images/Eligibility/EligibilityRejected.png);
+}
+.spnBookingReferenceNo
+{
+    float: left;
+}
+
+.appointment-details-container
+{
+    width: 225px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ececec;
+    height: 260px;
+}

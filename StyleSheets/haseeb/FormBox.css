@@ -1,0 +1,99 @@
+﻿body
+{
+    font: 12px/1.2 Verdana,sans-serif;
+}
+
+
+.FBWrapper
+{
+    background-color: #FCFDFD;
+    border: 2px solid #A6C9E2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 345px;
+}
+.PassFBWrapper
+{
+    background-color: #FCFDFD;
+    border: 2px solid #A6C9E2;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 345px;
+}
+
+.FBTable
+{
+    width: 100%;
+}
+
+.FBTable tr td
+{
+    padding: 5px;
+}
+
+.InputStyle
+{
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    border: 1px inset lightBlue;
+    padding: 4px;
+    width: 200px;
+}
+
+.FBLabel
+{
+    font-size:12px;
+}
+.FBButtonWrapper
+{
+    float:right;
+}
+.FBHeadingWrapper
+{
+    border-bottom: 1px dashed gray;
+    color: gray;
+    float: left;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    width: 100%;
+}
+
+.lblHeadingWrapper
+{
+    float: left;
+    margin: 10px 0 0;
+}
+
+.FBSubHeadingWrapper
+{
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+    float: left;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    padding: 10px;
+    width: 97.5%;
+}
+
+.FBValidationSummry
+{
+}
+.FBValidationSummry ul
+{
+    list-style: none;
+}
+.FBValidationSummry ul li
+{
+    color: Red;
+}
+

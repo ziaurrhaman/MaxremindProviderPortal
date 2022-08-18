@@ -1,0 +1,271 @@
+﻿
+
+
+
+#upload_button
+{
+    height: 18px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 67px;
+    z-index: 1;   
+}
+.upload-button
+{
+    height: 25px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#uploadDiv
+{
+    position:relative;
+    height: 25px;
+}
+
+#btnUploadPatiantPhoto
+{
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    z-index: 0;
+    font-size: 14px !important;
+}
+.btnUploadImage
+{
+    background: url("/Styles/images/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #77D5F7;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px !important;
+    font-weight: normal;
+    left: 2px;
+    padding: 2px 30px;
+    position: absolute;
+    top: 1px;
+    z-index: 0;
+}
+.uploadSeprator
+{
+    left: 125px;
+    position: absolute;
+    top: 5px;
+}
+.spanClearImage
+{
+    color: cadetblue;
+    cursor: pointer;
+    font-weight: bold;
+    left: 144px;
+    position: absolute;
+    top: 5px;
+    width: 90px;
+}
+
+
+
+.attachment-wrapper
+{
+    float: left;
+    height: 20px;
+    padding: 5px 0;
+    width: 108px;
+}
+
+.attachment-icon
+{
+    background: url("../Images/gmail-icon-bar.png") no-repeat scroll 0 -374px transparent;
+    float: right;
+    height: 21px;
+    width: 21px;
+}
+
+.attachment-name
+{
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.attachment-remove
+{
+    cursor: pointer;
+    float: left;
+}
+#attach-link
+{
+    color: #1155CC !important;
+    text-decoration: none;
+    left: 2px;
+    position: absolute;
+    top: 1px;
+    z-index: 0;
+}
+#attach-link:hover
+{
+    text-decoration: underline;
+}
+
+/** Below css was found without any selector: commented by furqan
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    z-index: 0;
+    font-size: 14px !important;
+}
+**/
+.btnUploadImage
+{
+    background: url("/Styles/images/ui-bg_glass_45_0078ae_1x400.png") repeat-x scroll 50% 50% #0078AE;
+    border: 1px solid #77D5F7;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px !important;
+    font-weight: normal;
+    left: 2px;
+    padding: 2px 30px;
+    position: absolute;
+    top: 1px;
+    z-index: 0;
+}
+.uploadSeprator
+{
+    left: 125px;
+    position: absolute;
+    top: 5px;
+}
+.spanClearImage
+{
+    color: cadetblue;
+    cursor: pointer;
+    font-weight: bold;
+    left: 144px;
+    position: absolute;
+    top: 5px;
+    width: 90px;
+}
+
+
+
+.attachment-wrapper
+{
+    float: left;
+    height: 20px;
+    padding: 5px 0;
+    width: 108px;
+}
+
+.attachment-icon
+{
+    background: url("../Images/gmail-icon-bar.png") no-repeat scroll 0 -374px transparent;
+    float: left;
+    height: 21px;
+    width: 21px;
+}
+
+.attachment-name
+{
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.attachment-remove
+{
+    cursor: pointer;
+    float: left;
+}
+#attach-link
+{
+    color: #1155CC !important;
+    text-decoration: none;
+    left: 2px;
+    position: absolute;
+    top: 1px;
+    z-index: 0;
+}
+#attach-link:hover
+{
+    text-decoration: underline;
+}
+
+.attachlink
+{
+    color: #1155CC !important;
+    text-decoration: none;
+    left: 2px;
+    position: absolute;
+    top: 1px;
+    z-index: 0;
+    cursor: pointer;
+}
+.attachlink:hover
+{
+    text-decoration: underline;
+}
+.uploadOrderDocumentsDiv
+{
+    position:relative;
+}
+#uploadDocumnet,#uploadSignedDocumnet
+{
+    height: 18px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 67px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

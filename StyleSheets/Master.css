@@ -1,0 +1,65 @@
+﻿
+
+
+
+.fixed-link-wrapper
+{
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    width: 20%;
+    cursor: pointer;
+}
+.fixed-link-title
+{
+    position: relative;
+    padding: 11px;
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    background: rgb(170, 222, 255);
+    background: -moz-linear-gradient(top, #AADEFF  0%, #79CAFC 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(170, 222, 255)), color-stop(100%,rgb(121, 202, 252)));
+    background: -webkit-linear-gradient(top, rgb(170, 222, 255) 0%,rgb(121, 202, 252) 100%);
+    background: -o-linear-gradient(top, #AADEFF  0%,#79CAFC 100%);
+    background: -ms-linear-gradient(top, #AADEFF  0%,#79CAFC 100%);
+    background: linear-gradient(top, #AADEFF  0%,#79CAFC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AADEFF ', endColorstr='#79CAFC');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#AADEFF ', endColorstr='#79CAFC')";
+}
+.divCheckedInPatientSlide
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 800px;
+    z-index: 99999999;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+.TeleHealthSession
+{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 800px;
+    z-index: 999;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+
+.TeleHealthSessionDetail {
+    border-top: 1px solid #FFF;
+    float: left;
+    width: 98%;
+    background-color: #fff;
+    padding: 1%;
+}
+
+
+.minimizeDivCheckedInPatient
+{
+    float: right;
+    margin-top: 8px;
+    margin-right: 6px;
+}

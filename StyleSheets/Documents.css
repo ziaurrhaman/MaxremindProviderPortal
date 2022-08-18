@@ -1,0 +1,47 @@
+﻿
+
+
+#divPatientDocumentsForm
+{
+    float: left;
+    width: 386px;
+}
+#divPatientDocumentsFiles
+{
+    float: left;
+    width: 386px;
+}
+#divPatientDocumentsFilesInner
+{
+    height: 355px;
+    width: 100%;
+    overflow-x: auto;
+    float: left;
+    clear: both;
+    position: relative;
+    border: 1px solid gray;
+}
+#divPatientDocumentsFilesInner .imgProgress
+{
+    position: absolute;
+    width: 87px;
+    height: 79px;
+    left: -590px;
+    z-index: 9999999;
+}
+
+.patient-document-files-wrapper
+{
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.patient-document-files-wrapper img
+{
+    width: 100%;
+}
+.patient-document-files-wrapper embed, .patient-document-files-wrapper object
+{
+    width: 100%;
+}

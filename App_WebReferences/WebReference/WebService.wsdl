@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEligibilityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Eligibility270String" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEligibilityResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEligibilityResponseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommercialInsuranceEligibilityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Eligibility270String" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCommercialInsuranceEligibilityResponseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCommercialInsuranceEligibilityResponseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEligibilityResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEligibilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEligibilityResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEligibilityResponseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommercialInsuranceEligibilityResponseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCommercialInsuranceEligibilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCommercialInsuranceEligibilityResponseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCommercialInsuranceEligibilityResponseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EligibilitySoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibilityResponse">
+      <wsdl:input message="tns:GetEligibilityResponseSoapIn" />
+      <wsdl:output message="tns:GetEligibilityResponseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCommercialInsuranceEligibilityResponse">
+      <wsdl:input message="tns:GetCommercialInsuranceEligibilityResponseSoapIn" />
+      <wsdl:output message="tns:GetCommercialInsuranceEligibilityResponseSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EligibilitySoap" type="tns:EligibilitySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibilityResponse">
+      <soap:operation soapAction="http://tempuri.org/GetEligibilityResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommercialInsuranceEligibilityResponse">
+      <soap:operation soapAction="http://tempuri.org/GetCommercialInsuranceEligibilityResponse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EligibilitySoap12" type="tns:EligibilitySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEligibilityResponse">
+      <soap12:operation soapAction="http://tempuri.org/GetEligibilityResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCommercialInsuranceEligibilityResponse">
+      <soap12:operation soapAction="http://tempuri.org/GetCommercialInsuranceEligibilityResponse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Eligibility">
+    <wsdl:port name="EligibilitySoap" binding="tns:EligibilitySoap">
+      <soap:address location="http://35.186.184.9/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EligibilitySoap12" binding="tns:EligibilitySoap12">
+      <soap12:address location="http://35.186.184.9/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
